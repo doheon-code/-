@@ -57,7 +57,7 @@
     margin: 0 auto;
     padding-block: 28px 64px;
     display: grid;
-    grid-template-columns: 200px minmax(0, 1fr);
+    grid-template-columns: 236px minmax(0, 1fr);
     gap: 32px;
     align-items: start;
   }
@@ -78,30 +78,53 @@
   }
   .mast .meta { color: var(--muted); font-size: 13px; font-family: var(--mono); }
 
-  nav.dates { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); }
-  .dates h2 {
-    margin: 0 0 8px;
-    font: 600 12px/1 var(--sans);
-    letter-spacing: 0.08em;
-    color: var(--muted);
+  nav.dates { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); display: grid; gap: 18px; }
+  .dates label, .cal-title {
+    display: block; margin: 0 0 6px;
+    font: 600 12px/1 var(--sans); letter-spacing: 0.08em; color: var(--muted);
   }
-  .dates ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
-  .dates button {
-    width: 100%;
-    text-align: left;
-    background: none;
-    border: 0;
-    border-left: 3px solid transparent;
-    padding: 6px 10px;
-    color: var(--muted);
-    font: 500 14px/1.4 var(--mono);
-    cursor: pointer;
-    font-variant-numeric: tabular-nums;
+  .dates input[type="search"] {
+    width: 100%; font: 400 15px/1.4 var(--sans); color: var(--ink);
+    background: var(--paper); border: 1px solid var(--rule); padding: 8px 10px; border-radius: 0;
   }
-  .dates button:hover { color: var(--ink); }
-  .dates button[aria-current="true"] { color: var(--ink); border-left-color: var(--accent); background: var(--paper); }
+  .dates input[type="search"]:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+  .results { display: grid; gap: 2px; }
+  .results .count { font-size: 12.5px; color: var(--muted); margin: 0 0 6px; }
+  .results button {
+    display: grid; gap: 2px; width: 100%; text-align: left; cursor: pointer;
+    background: none; border: 0; border-left: 3px solid transparent; padding: 8px 10px; color: var(--ink);
+  }
+  .results button:hover, .results button[aria-current="true"] { background: var(--paper); border-left-color: var(--accent); }
+  .results .d { font: 500 13px/1.3 var(--mono); font-variant-numeric: tabular-nums; }
+  .results .d small { font-family: var(--sans); color: var(--muted); margin-left: 6px; }
+  .results .snip { font-size: 13px; line-height: 1.5; color: var(--muted); }
+  mark { background: var(--accent-soft); color: inherit; padding: 0 1px; }
+  article blockquote mark { background: var(--accent); color: #fff; }
+  .cal-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .cal-head span { font: 600 15px/1 var(--sans); }
+  .cal-head button {
+    width: 30px; height: 30px; border: 1px solid var(--rule); background: var(--paper);
+    color: var(--ink); font: 500 16px/1 var(--sans); cursor: pointer;
+  }
+  .cal-head button:disabled { opacity: 0.35; cursor: default; }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 2px; text-align: center; }
+  .cal-grid .wd { font-size: 11.5px; color: var(--muted); padding: 2px 0 4px; }
+  .cal-grid .wd:first-child { color: var(--accent); }
+  .cal-grid span.off { font: 400 13px/32px var(--mono); color: var(--rule); }
+  .cal-grid button {
+    position: relative; height: 32px; border: 0; background: var(--paper); color: var(--ink);
+    font: 500 13px/1 var(--mono); cursor: pointer; font-variant-numeric: tabular-nums;
+  }
+  .cal-grid button::after {
+    content: ""; position: absolute; left: 50%; bottom: 4px; width: 4px; height: 4px;
+    margin-left: -2px; border-radius: 50%; background: var(--accent);
+  }
+  .cal-grid button:hover { outline: 1px solid var(--accent); }
+  .cal-grid button[aria-current="true"] { background: var(--ink); color: var(--paper); }
+  .cal-grid button[aria-current="true"]::after { background: var(--paper); }
+  .cal-note { margin: 8px 0 0; font-size: 12px; color: var(--muted); }
   .dates button:focus-visible, .jump a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
-  .dates .dow { font-family: var(--sans); margin-left: 6px; }
+  .notice { margin: 0 0 12px; font-size: 13.5px; color: var(--muted); }
 
   main { min-width: 0; }
   .jump { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 20px; }
@@ -219,11 +242,8 @@
 
   @media (max-width: 760px) {
     .shell { grid-template-columns: 1fr; gap: 16px; padding-block: 16px 48px; }
-    nav.dates { position: static; }
-    .dates ol { display: flex; overflow-x: auto; gap: 6px; padding-bottom: 4px; }
-    .dates li { flex: none; }
-    .dates button { border-left: 0; border-bottom: 3px solid transparent; padding: 6px 8px; }
-    .dates button[aria-current="true"] { border-bottom-color: var(--accent); }
+    nav.dates { position: static; grid-template-columns: minmax(0, 1fr); }
+    .cal { max-width: 360px; }
   }
   @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 </style>
@@ -238,12 +258,26 @@
     </div>
     <span class="meta" id="updated">불러오는 중…</span>
   </header>
-  <nav class="dates" id="dateNav" aria-label="날짜별 브리핑">
-    <h2>지난 브리핑</h2>
-    <ol id="dateList"></ol>
+  <nav class="dates" id="dateNav" aria-label="브리핑 찾기">
+    <div>
+      <label for="q">키워드 검색</label>
+      <input type="search" id="q" placeholder="예: 호르무즈 코스피" autocomplete="off">
+    </div>
+    <div class="results" id="results" hidden></div>
+    <div class="cal" id="cal">
+      <div class="cal-title">날짜로 찾기</div>
+      <div class="cal-head">
+        <button type="button" id="calPrev" aria-label="이전 달">‹</button>
+        <span id="calLabel"></span>
+        <button type="button" id="calNext" aria-label="다음 달">›</button>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+      <p class="cal-note">점이 찍힌 날짜에 브리핑이 있습니다.</p>
+    </div>
   </nav>
   <main>
     <section id="pane-brief">
+      <p class="notice" id="notice" hidden></p>
       <div class="jump" id="jump"></div>
       <article id="view"><p class="status">브리핑을 불러오는 중입니다.</p></article>
     </section>
@@ -263,18 +297,110 @@
 <script>
   const DOW = ["일", "월", "화", "수", "목", "금", "토"];
   const view = document.getElementById("view");
-  const list = document.getElementById("dateList");
   const jump = document.getElementById("jump");
-  let items = [];
+  const qInput = document.getElementById("q");
+  const results = document.getElementById("results");
+  const cal = document.getElementById("cal");
+  let items = [], byDate = new Map(), cur = null, calY = 0, calM = 0, terms = [];
+
+  const reEsc = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const plain = md => md.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1").replace(/[#>*|`]/g, " ").replace(/-{3,}/g, " ").replace(/\s+/g, " ");
+
+  function renderCal() {
+    const dates = items.map(b => b.date).sort();
+    const first = dates[0], last = dates[dates.length - 1];
+    const ym = (y, m) => y * 12 + m;
+    const [fy, fm] = first.split("-").map(Number), [ly, lm] = last.split("-").map(Number);
+    document.getElementById("calLabel").textContent = calY + "년 " + (calM + 1) + "월";
+    document.getElementById("calPrev").disabled = ym(calY, calM) <= ym(fy, fm - 1);
+    document.getElementById("calNext").disabled = ym(calY, calM) >= ym(ly, lm - 1);
+    const startDow = new Date(Date.UTC(calY, calM, 1)).getUTCDay();
+    const days = new Date(Date.UTC(calY, calM + 1, 0)).getUTCDate();
+    let html = DOW.map(d => `<span class="wd">${d}</span>`).join("");
+    html += "<span></span>".repeat(startDow);
+    for (let d = 1; d <= days; d++) {
+      const ds = `${calY}-${String(calM + 1).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+      html += byDate.has(ds)
+        ? `<button type="button" data-date="${ds}" aria-current="${ds === cur}" aria-label="${calM + 1}월 ${d}일 브리핑">${d}</button>`
+        : `<span class="off">${d}</span>`;
+    }
+    const grid = document.getElementById("calGrid");
+    grid.innerHTML = html;
+    grid.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { show(b.dataset.date); window.scrollTo(0, 0); }));
+  }
+  function moveCal(step) {
+    calM += step;
+    if (calM < 0) { calM = 11; calY--; }
+    if (calM > 11) { calM = 0; calY++; }
+    renderCal();
+  }
+  document.getElementById("calPrev").addEventListener("click", () => moveCal(-1));
+  document.getElementById("calNext").addEventListener("click", () => moveCal(1));
+
+  function highlight(root) {
+    if (!terms.length) return;
+    const re = new RegExp("(" + terms.map(reEsc).join("|") + ")", "gi");
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+    const nodes = [];
+    while (walker.nextNode()) if (re.test(walker.currentNode.nodeValue)) nodes.push(walker.currentNode);
+    nodes.forEach(n => {
+      const span = document.createElement("span");
+      span.innerHTML = esc(n.nodeValue).replace(re, "<mark>$1</mark>");
+      n.replaceWith(...span.childNodes);
+    });
+    const firstMark = root.querySelector("mark");
+    if (firstMark) firstMark.scrollIntoView({ block: "center" });
+  }
+
+  function search() {
+    const q = qInput.value.trim();
+    terms = q ? q.split(/\s+/).filter(Boolean) : [];
+    if (!terms.length) {
+      results.hidden = true; cal.hidden = false;
+      if (cur) show(cur, { keepScroll: true });
+      return;
+    }
+    const lows = terms.map(s => s.toLowerCase());
+    const hits = items.filter(b => lows.every(s => b.low.includes(s)));
+    cal.hidden = true; results.hidden = false;
+    if (!hits.length) {
+      results.innerHTML = `<p class="count">'${esc(q)}'이(가) 들어간 브리핑이 없습니다.</p>`;
+      return;
+    }
+    const re = new RegExp("(" + terms.map(reEsc).join("|") + ")", "gi");
+    results.innerHTML = `<p class="count">${hits.length}일치 브리핑에서 찾았습니다.</p>` + hits.map(b => {
+      const i = b.low.indexOf(lows[0]);
+      const s = Math.max(0, i - 36);
+      const snip = (s > 0 ? "…" : "") + b.plain.slice(s, i + lows[0].length + 60) + "…";
+      const n = (b.plain.match(re) || []).length;
+      return `<button type="button" data-date="${b.date}" aria-current="${b.date === cur}">
+        <span class="d">${b.date.replaceAll("-", ".")} (${dow(b.date)})<small>${n}곳</small></span>
+        <span class="snip">${esc(snip).replace(re, "<mark>$1</mark>")}</span></button>`;
+    }).join("");
+    results.querySelectorAll("button").forEach(btn => btn.addEventListener("click", () => show(btn.dataset.date)));
+  }
+  let timer;
+  qInput.addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(search, 150); });
 
   function dow(date) {
     const [y, m, d] = date.split("-").map(Number);
     return DOW[new Date(Date.UTC(y, m - 1, d)).getUTCDay()];
   }
 
-  function show(date) {
-    const item = items.find(b => b.date === date) || items[0];
-    if (!item) return;
+  function show(date, opts = {}) {
+    const notice = document.getElementById("notice");
+    let item = byDate.get(date);
+    notice.hidden = true;
+    if (!item) {
+      item = items.find(b => b.date <= date) || items[items.length - 1];
+      if (!item) return;
+      if (date) {
+        notice.textContent = `${date.replaceAll("-", ".")} 브리핑은 없어서 가장 가까운 이전 날짜(${item.date.replaceAll("-", ".")})를 보여 드립니다.`;
+        notice.hidden = false;
+      }
+    }
+    cur = item.date;
+    [calY, calM] = [Number(cur.slice(0, 4)), Number(cur.slice(5, 7)) - 1];
     view.innerHTML = marked.parse(item.markdown);
     view.querySelectorAll("a").forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
     view.querySelectorAll("table").forEach(t => {
@@ -292,7 +418,9 @@
       a.addEventListener("click", e => { e.preventDefault(); h.scrollIntoView(); });
       jump.appendChild(a);
     });
-    list.querySelectorAll("button").forEach(b => b.setAttribute("aria-current", String(b.dataset.date === item.date)));
+    renderCal();
+    results.querySelectorAll("button").forEach(b => b.setAttribute("aria-current", String(b.dataset.date === cur)));
+    if (terms.length) highlight(view); else if (!opts.keepScroll) window.scrollTo(0, 0);
     try { history.replaceState(null, "", "#d" + item.date.replaceAll("-", "")); } catch (e) {}
   }
 
@@ -370,19 +498,9 @@
     items = data.briefings || [];
     document.getElementById("updated").textContent = "갱신 " + data.updated + " · 브리핑 " + items.length + "일치 · 이슈 " + issues.length + "개";
     if (!items.length) { view.innerHTML = '<p class="status">아직 올라온 브리핑이 없습니다.</p>'; return; }
-    list.innerHTML = "";
-    items.forEach(b => {
-      const li = document.createElement("li");
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.dataset.date = b.date;
-      btn.innerHTML = b.date.slice(5).replace("-", ".") + '<span class="dow">' + dow(b.date) + "</span>";
-      btn.addEventListener("click", () => { show(b.date); window.scrollTo(0, 0); });
-      li.appendChild(btn);
-      list.appendChild(li);
-    });
+    items.forEach(b => { b.plain = plain(b.markdown); b.low = b.plain.toLowerCase(); byDate.set(b.date, b); });
     const m = location.hash.match(/^#d(\d{4})(\d{2})(\d{2})$/);
-    show(m ? m[1] + "-" + m[2] + "-" + m[3] : items[0].date);
+    show(m ? m[1] + "-" + m[2] + "-" + m[3] : items[0].date, { keepScroll: true });
   }
 
   fetch("briefings.json", { cache: "no-store" })
