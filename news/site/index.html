@@ -760,6 +760,7 @@
       sv.innerHTML = marked.parse(p.markdown);
       sv.querySelectorAll("a").forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
       sv.querySelectorAll("table").forEach(tb => { const w = document.createElement("div"); w.className = "table-wrap"; tb.replaceWith(w); w.appendChild(tb); });
+      appendPeriodSources(sv, p);
     } else {
       sv.hidden = false;
       sv.innerHTML = p.live
@@ -767,6 +768,28 @@
         : "";
     }
     renderSumNav();
+  }
+
+  function appendPeriodSources(root, p) {
+    // 요약 글 자체의 링크 + 기간 안 브리핑들의 출처를 매체별로 모아 보여 준다.
+    const own = p.sources || [];
+    const fromBriefs = items.filter(b => b.date >= p.start && b.date <= p.end).flatMap(b => (b.sources || []).map(s => ({ ...s, date: b.date })));
+    const byDomain = new Map();
+    [...own.map(s => ({ ...s, date: "요약" })), ...fromBriefs].forEach(s => {
+      const m = byDomain.get(s.domain) || { name: s.name, domain: s.domain, korean: s.korean, list: [] };
+      m.list.push(s); byDomain.set(s.domain, m);
+    });
+    const media = [...byDomain.values()].sort((a, b) => b.list.length - a.list.length);
+    const box = document.createElement("section");
+    box.className = "srcbox";
+    if (!media.length) { box.innerHTML = '<h2>📰 이 기간의 출처</h2><p class="mix">이 기간의 출처 기록이 없습니다.</p>'; root.appendChild(box); return; }
+    const total = media.reduce((n, m) => n + m.list.length, 0);
+    const kr = media.filter(m => m.korean).reduce((n, m) => n + m.list.length, 0);
+    box.innerHTML = `<h2>📰 이 기간의 출처</h2>
+      <p class="mix">요약과 기간 안 브리핑에 인용된 기사 ${total}건 · 매체 ${media.length}곳 · 국내 ${kr}건 / 해외 ${total - kr}건</p>
+      <ul class="srclist">${media.map(m => `<li><span class="who">${esc(m.name)}<small>${esc(m.domain)}</small></span>
+        <span>${m.list.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.date === "요약" ? "요약" : s.date.slice(5).replace("-", "."))}${s.headline ? " " + esc(s.headline) : ""}</a>`).join(" · ")}</span></li>`).join("")}</ul>`;
+    root.appendChild(box);
   }
 
   function renderSumNav() {

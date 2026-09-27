@@ -296,8 +296,9 @@ def pack(work: Path, out: Path) -> None:
     if left:
         print("아직 남은 할 일:\n  - " + "\n  - ".join(left))
     no_src = [b["date"] for b in items if not b["sources"]]
+    no_src += [s["key"] for s in summaries if not s["sources"]]
     if no_src:
-        print(f"경고: 출처 링크가 하나도 없는 브리핑이 있습니다: {', '.join(no_src)}")
+        print(f"경고: 출처 링크가 하나도 없는 브리핑·요약이 있습니다: {', '.join(no_src)}")
 
 
 def unpack(src: Path, work: Path) -> None:
