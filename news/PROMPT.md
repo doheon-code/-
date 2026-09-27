@@ -12,8 +12,12 @@
    - 🇰🇷 한국 경제 (코스피·환율, 수출·반도체, 물가·금리, 정부 정책, 주요 기업)
 3. `news/briefings/YYYY-MM-DD.md` 파일을 아래 형식으로 작성한다.
 4. `news/README.md`의 "최근 브리핑" 목록 맨 위에 새 날짜 링크를 추가한다 (최근 14개만 유지).
-5. 커밋 후 푸시한다.
-6. 세션의 마지막 답변은 "오늘의 핵심 3줄" + 파일 경로로 짧게 끝낸다 (이 내용이 알림으로 간다).
+5. `python3 news/build_site.py` 를 실행해 `news/site/briefings.json` 을 갱신한다.
+6. 커밋 후 푸시한다.
+7. 웹페이지를 갱신한다 (Artifact 도구, URL: https://claude.ai/artifact/G2cofu9uoG3YaKEeYcKMP2).
+   - 먼저 `action: "read"` 로 이 URL을 읽고, 이어서 `path: "briefings.json"` 으로 한 번 더 읽는다 (읽지 않으면 덮어쓰기가 거부됨).
+   - 그다음 `url` 에 위 주소, `file_path` 에 `news/site/index.html`, `files` 에 `{"briefings.json": "news/site/briefings.json"}` 을 넣어 publish 한다. `icon` 은 넣지 않는다. 새 URL이 생기면 안 된다.
+8. 세션의 마지막 답변은 "오늘의 핵심 3줄" + 파일 경로로 짧게 끝낸다 (이 내용이 알림으로 간다).
 
 ## 작성 원칙
 
