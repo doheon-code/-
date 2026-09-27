@@ -52,6 +52,7 @@ KOREAN_DOMAINS = {
     "yna.co.kr", "chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "mk.co.kr", "sbs.co.kr",
     "imbc.com", "newsis.com", "ohmynews.com", "tvchosun.com", "segye.com", "munhwa.com", "hankookilbo.com",
     "etnews.com", "kbs.co.kr", "jtbc.co.kr", "mbn.co.kr", "ytn.co.kr", "news1.kr",
+    "ajunews.com", "newstopkorea.com", "inews24.com", "sisajournal.com", "viva100.com", "newdaily.co.kr",
 }
 
 

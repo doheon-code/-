@@ -1,4 +1,6 @@
 <title>아침 정치경제 브리핑</title>
+<meta name="author" content="김도헌">
+<meta name="copyright" content="© 2026 김도헌. All rights reserved.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700;800&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -324,6 +326,12 @@
     nav.dates { position: static; grid-template-columns: minmax(0, 1fr); }
     .cal { max-width: 360px; }
   }
+  footer.site {
+    grid-column: 1 / -1; border-top: 2px solid var(--ink); padding-top: 14px; margin-top: 8px;
+    display: grid; gap: 4px; font-size: 13px; color: var(--muted);
+  }
+  footer.site .owner { font-weight: 600; color: var(--ink); font-size: 14px; }
+  footer.site p { margin: 0; max-width: 80ch; }
   @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
 </style>
 
@@ -391,6 +399,11 @@
       <p class="method">수집 방법: 매일 아침 웹 검색으로 기사를 찾아 요약합니다. 많은 뉴스 사이트는 본문을 직접 열 수 없어서, 검색 결과에 나온 기사 제목과 요약을 바탕으로 쓰는 경우가 많습니다. 출처 목록은 브리핑 본문의 링크에서 자동으로 뽑기 때문에, 본문에 링크가 없는 문장은 여기에 나오지 않습니다.</p>
     </section>
   </main>
+  <footer class="site">
+    <p class="owner">© <span id="cyear">2026</span> 김도헌. All rights reserved.</p>
+    <p>이 사이트의 구성·편집, 브리핑·요약·전망·분석 글과 추적 기록의 저작권은 김도헌에게 있습니다. 허락 없이 복제·배포하거나 다른 곳에 게시할 수 없습니다.</p>
+    <p>브리핑에 인용·링크한 기사 원문의 저작권은 각 언론사에 있습니다.</p>
+  </footer>
 </div>
 
 <script>
@@ -821,6 +834,8 @@
     const m = location.hash.match(/^#d(\d{4})(\d{2})(\d{2})$/);
     show(m ? m[1] + "-" + m[2] + "-" + m[3] : items[0].date, { keepScroll: true });
   }
+
+  { const y = new Date().getFullYear(); if (y > 2026) document.getElementById("cyear").textContent = "2026–" + y; }
 
   fetch("briefings.json", { cache: "no-store" })
     .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })

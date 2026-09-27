@@ -1,5 +1,5 @@
 {
- "updated": "2026-09-28 07:41 KST",
+ "updated": "2026-09-28 08:30 KST",
  "today": "2026-09-28",
  "briefings": [
   {
@@ -43,7 +43,7 @@
      "name": "뉴스톱",
      "url": "https://www.newstopkorea.com/news/articleView.html?idxno=47402",
      "domain": "newstopkorea.com",
-     "korean": false,
+     "korean": true,
      "section": "",
      "headline": ""
     },
@@ -147,7 +147,7 @@
      "name": "아주경제",
      "url": "https://www.ajunews.com/view/20260907112149450",
      "domain": "ajunews.com",
-     "korean": false,
+     "korean": true,
      "section": "🇰🇷 한국 정치",
      "headline": "호르무즈 파병 논의 지속"
     },
@@ -1529,7 +1529,7 @@
   {
    "domain": "newstopkorea.com",
    "name": "뉴스톱",
-   "korean": false,
+   "korean": true,
    "count": 1,
    "dates": [
     "2026-09-28"
@@ -1574,7 +1574,7 @@
   {
    "domain": "ajunews.com",
    "name": "아주경제",
-   "korean": false,
+   "korean": true,
    "count": 1,
    "dates": [
     "2026-09-28"
