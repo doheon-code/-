@@ -233,7 +233,8 @@
   .ftable { background: var(--paper); border: 1px solid var(--rule); overflow-x: auto; }
   .ftable table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 14px; }
   .ftable th, .ftable td { padding: 10px 14px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
-  .ftable th { font-weight: 600; color: var(--muted); font-size: 12px; letter-spacing: 0.06em; }
+  .ftable th { font-weight: 600; color: var(--muted); font-size: 12px; letter-spacing: 0.06em; white-space: nowrap; }
+  .ftable td:nth-child(4) { white-space: nowrap; }
   .ftable td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
   .ftable .basis { display: block; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
   .st { font-size: 12px; padding: 2px 8px; white-space: nowrap; border: 1px solid var(--rule); }
@@ -275,6 +276,43 @@
   .media .arts a { color: var(--ink); }
   .media .arts .item { color: var(--muted); }
   .method { font-size: 13px; color: var(--muted); max-width: 72ch; margin: 16px 0 0; }
+  .sumwrap { display: grid; grid-template-columns: 236px minmax(0, 1fr); gap: 32px; align-items: start; }
+  .sumnav { display: grid; gap: 16px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 16px); }
+  .sumnav h3 { margin: 0 0 6px; font: 600 12px/1 var(--sans); letter-spacing: 0.08em; color: var(--muted); }
+  .sumnav ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+  .sumnav button {
+    width: 100%; text-align: left; background: none; border: 0; border-left: 3px solid transparent;
+    padding: 7px 10px; color: var(--ink); font: 500 14px/1.35 var(--sans); cursor: pointer;
+  }
+  .sumnav button small { display: block; font: 400 12px/1.3 var(--mono); color: var(--muted); }
+  .sumnav button:hover, .sumnav button[aria-current="true"] { background: var(--paper); border-left-color: var(--accent); }
+  .sumnav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .sumnav .live { color: var(--accent); font-size: 11.5px; margin-left: 4px; }
+  .glance { background: var(--paper); border: 1px solid var(--rule); padding: clamp(18px, 3vw, 28px); margin-bottom: 16px; }
+  .glance h2 { margin: 0 0 4px; font: 700 21px/1.4 var(--serif); }
+  .glance .period { margin: 0 0 16px; font: 500 13px/1.4 var(--mono); color: var(--muted); }
+  .glance h3 { margin: 20px 0 8px; font: 600 12px/1 var(--sans); letter-spacing: 0.08em; color: var(--muted); }
+  .glance .tw { overflow-x: auto; }
+  .glance table { border-collapse: collapse; width: 100%; min-width: 480px; font-size: 14px; }
+  .glance th, .glance td { padding: 8px 10px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+  .glance th { font-weight: 600; color: var(--muted); font-size: 12px; }
+  .glance td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+  .up { color: #2f7d4a; } .down { color: var(--accent); } .flat { color: var(--muted); }
+  .glance .ev { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 2px; font-size: 13px; color: var(--muted); }
+  .glance .ev time { font-family: var(--mono); margin-right: 6px; }
+  .glance .empty { color: var(--muted); font-size: 13.5px; margin: 0; }
+  .calib { background: var(--paper); border: 1px solid var(--rule); padding: 16px 20px; margin: 0 0 20px; }
+  .calib h3 { margin: 0 0 8px; font: 600 12px/1 var(--sans); letter-spacing: 0.08em; color: var(--muted); }
+  .calib table { border-collapse: collapse; font-size: 14px; }
+  .calib th, .calib td { padding: 6px 14px 6px 0; border-bottom: 1px solid var(--rule); text-align: left; }
+  .calib td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  .calib p { margin: 8px 0 0; font-size: 13px; color: var(--muted); }
+  .st.due { color: #fff; background: var(--accent); border-color: var(--accent); }
+  @media (max-width: 760px) {
+    .sumwrap { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+    .sumnav { position: static; }
+  }
+
   @media (max-width: 760px) {
     .srclist li { grid-template-columns: minmax(0, 1fr); gap: 0; }
     .media summary { grid-template-columns: minmax(0, 1fr) 44px; }
@@ -295,6 +333,7 @@
     <div class="tabs" role="tablist">
       <button type="button" role="tab" id="tab-brief" data-tab="brief" aria-selected="true">브리핑</button>
       <button type="button" role="tab" id="tab-issues" data-tab="issues" aria-selected="false">이슈 흐름</button>
+      <button type="button" role="tab" id="tab-sum" data-tab="sum" aria-selected="false">주간·월간</button>
       <button type="button" role="tab" id="tab-fc" data-tab="fc" aria-selected="false">전망 기록</button>
       <button type="button" role="tab" id="tab-src" data-tab="src" aria-selected="false">출처 기록</button>
     </div>
@@ -328,9 +367,20 @@
       <div class="filters" id="areaFilters"></div>
       <div class="issues" id="issueList"></div>
     </section>
+    <section id="pane-sum" hidden>
+      <div class="sumwrap">
+        <nav class="sumnav" id="sumNav" aria-label="주간·월간 요약 목록"></nav>
+        <div>
+          <div class="glance" id="glance"></div>
+          <article id="sumView" hidden></article>
+        </div>
+      </div>
+    </section>
     <section id="pane-fc" hidden>
-      <p class="intro">마감일과 확률을 정해 둔 전망들입니다. 마감일이 지나면 결과를 채점하고, 기록은 지우거나 고치지 않습니다. Brier 점수는 0에 가까울수록 정확하며, 모든 전망을 50%로 찍으면 0.25가 나옵니다.</p>
+      <p class="intro">마감일과 확률을 정해 둔 전망들입니다. 매일 브리핑(일간), 주간 요약(주간, 4주 뒤 마감), 월간 요약(월간, 다음 달 말 마감)에서 만들고, 마감일이 지나면 다음 날 아침 실행에서 자동으로 채점합니다. 기록은 지우거나 고치지 않습니다. Brier 점수는 0에 가까울수록 정확하며, 모든 전망을 50%로 찍으면 0.25가 나옵니다.</p>
       <div class="stats" id="fcStats"></div>
+      <div class="calib" id="calib"></div>
+      <div class="filters" id="fcFilters"></div>
       <div class="ftable" id="fcTable"></div>
     </section>
     <section id="pane-src" hidden>
@@ -479,7 +529,7 @@
 
   function setTab(name) {
     document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === name)));
-    ["brief", "issues", "fc", "src"].forEach(n => { document.getElementById("pane-" + n).hidden = n !== name; });
+    ["brief", "issues", "sum", "fc", "src"].forEach(n => { document.getElementById("pane-" + n).hidden = n !== name; });
     document.getElementById("dateNav").hidden = name !== "brief";
     document.querySelector(".shell").classList.toggle("wide", name !== "brief");
     try { localStorage.setItem("tab", name); } catch (e) {}
@@ -567,34 +617,176 @@
     }).join("") || '<p class="status">추적 중인 이슈가 없습니다.</p>';
   }
 
-  function renderForecasts(list, sc) {
+  let fcAll = [], fcScore = { resolved: 0 }, fcKind = "전체", todayStr = "";
+  const isDue = f => f.status === "대기" && todayStr && f.due < todayStr;
+
+  function renderForecasts() {
+    const list = fcAll, sc = fcScore;
     const titles = Object.fromEntries(issues.map(i => [i.id, i.title]));
     const pending = list.filter(f => f.status === "대기").length;
+    const due = list.filter(isDue).length;
     document.getElementById("fcStats").innerHTML = `
       <div><b>${list.length}</b><span>전체 전망</span></div>
       <div><b>${pending}</b><span>결과 대기</span></div>
+      <div><b>${due}</b><span>채점 대기 (마감 지남)</span></div>
       <div><b>${sc.resolved ? sc.right + "/" + sc.resolved : "–"}</b><span>방향 적중 (50% 기준)</span></div>
       <div><b>${sc.resolved ? sc.brier.toFixed(3) : "–"}</b><span>Brier 점수</span></div>`;
-    const rows = [...list].sort((a, b) => a.due.localeCompare(b.due)).map(f => {
-      let st = `<span class="st">${esc(f.status)}</span>`;
+    const cal = sc.calibration || [];
+    const byMonth = {};
+    list.filter(f => f.status === "발생" || f.status === "미발생").forEach(f => {
+      const m = (f.resolved || f.due).slice(0, 7);
+      const o = byMonth[m] ||= { n: 0, right: 0, b: 0 };
+      const hit = f.status === "발생";
+      o.n++; o.right += (f.probability >= 50) === hit; o.b += (f.probability / 100 - hit) ** 2;
+    });
+    const months = Object.keys(byMonth).sort().reverse();
+    document.getElementById("calib").innerHTML = cal.length ? `
+      <h3>확률 보정표 — 말한 확률과 실제로 일어난 비율</h3>
+      <table><thead><tr><th>확률 구간</th><th>전망 수</th><th>평균 확률</th><th>실제 발생</th></tr></thead><tbody>
+      ${cal.map(c => `<tr><td>${esc(c.range)}</td><td class="num">${c.n}</td><td class="num">${c.said}%</td><td class="num">${c.happened}%</td></tr>`).join("")}
+      </tbody></table>
+      ${months.length ? `<h3 style="margin-top:16px">월별 성적</h3><table><thead><tr><th>채점 월</th><th>채점 수</th><th>방향 적중</th><th>Brier</th></tr></thead><tbody>
+      ${months.map(m => `<tr><td class="num">${m}</td><td class="num">${byMonth[m].n}</td><td class="num">${byMonth[m].right}/${byMonth[m].n}</td><td class="num">${(byMonth[m].b / byMonth[m].n).toFixed(3)}</td></tr>`).join("")}</tbody></table>` : ""}
+      <p>평균 확률과 실제 발생 비율이 비슷할수록 전망의 확률을 믿을 만하다는 뜻입니다.</p>`
+      : `<h3>확률 보정표</h3><p>채점된 전망이 쌓이면, 확률 구간별로 "말한 확률"과 "실제로 일어난 비율"을 비교한 표와 월별 성적이 여기에 나옵니다.</p>`;
+    const f = document.getElementById("fcFilters");
+    f.innerHTML = ["전체", "일간", "주간", "월간", "채점 대기"].map(k => `<button type="button" aria-pressed="${k === fcKind}" data-k="${k}">${k}</button>`).join("");
+    f.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { fcKind = b.dataset.k; renderForecasts(); }));
+    const shown = list.filter(x => fcKind === "전체" || (fcKind === "채점 대기" ? isDue(x) : (x.kind || "일간") === fcKind));
+    const rows = [...shown].sort((a, b) => a.due.localeCompare(b.due)).map(f => {
+      let st = isDue(f) ? `<span class="st due">채점 대기</span>` : `<span class="st">${esc(f.status)}</span>`;
       if (f.status === "발생" || f.status === "미발생") {
         const right = (f.probability >= 50) === (f.status === "발생");
         st = `<span class="st ${right ? "hit" : "miss"}">${esc(f.status)} · ${right ? "맞음" : "틀림"}</span>`;
       }
+      const result = f.status !== "대기"
+        ? `<span class="basis">판정(${esc(f.resolved || "")}): ${esc(f.note || "")}${srcLinks(f.result_sources)}</span>` : "";
       return `<tr><td class="num">${esc(f.due)}</td>
-        <td>${esc(f.claim)}<span class="basis">${esc(f.basis)}${f.note ? " · 판정: " + esc(f.note) : ""}${srcLinks(f.sources)}</span></td>
-        <td class="num">${f.probability}%</td><td>${esc(titles[f.issue] || f.issue)}</td><td>${st}</td>
+        <td>${esc(f.claim)}<span class="basis">근거: ${esc(f.basis)}${srcLinks(f.sources)}</span>${result}</td>
+        <td class="num">${f.probability}%</td><td>${esc(f.kind || "일간")}</td><td>${esc(titles[f.issue] || f.issue)}</td><td>${st}</td>
         <td class="num">${esc(f.made)}</td></tr>`;
     }).join("");
     document.getElementById("fcTable").innerHTML = rows
-      ? `<table><thead><tr><th>마감</th><th>전망</th><th>확률</th><th>이슈</th><th>결과</th><th>작성</th></tr></thead><tbody>${rows}</tbody></table>`
-      : '<p class="status" style="padding:16px">아직 기록된 전망이 없습니다.</p>';
+      ? `<table><thead><tr><th>마감</th><th>전망</th><th>확률</th><th>종류</th><th>이슈</th><th>결과</th><th>작성</th></tr></thead><tbody>${rows}</tbody></table>`
+      : '<p class="status" style="padding:16px">해당하는 전망이 없습니다.</p>';
+  }
+
+  // ---------- 주간·월간
+  let sums = [], indicators = [], curSum = null;
+  const iso = d => d.toISOString().slice(0, 10);
+  const addDays = (s, n) => { const d = new Date(s + "T00:00:00Z"); d.setUTCDate(d.getUTCDate() + n); return iso(d); };
+  const fmtNum = v => v == null ? "–" : Number(v).toLocaleString("ko-KR", { maximumFractionDigits: 2 });
+
+  function periods() {
+    const list = [];
+    if (todayStr) {
+      const d = new Date(todayStr + "T00:00:00Z");
+      const monday = addDays(todayStr, -((d.getUTCDay() + 6) % 7));
+      list.push({ kind: "주간", key: "live-week", live: true, start: monday, end: todayStr, title: "이번 주 (진행 중)" });
+      const m1 = todayStr.slice(0, 8) + "01";
+      list.push({ kind: "월간", key: "live-month", live: true, start: m1, end: todayStr, title: "이번 달 (진행 중)" });
+    }
+    return list.concat(sums);
+  }
+
+  function valueAt(key, day, from) {
+    // day 이전(포함) 마지막 기록. from 이 있으면 그 날짜 이후 기록만 본다.
+    let v = null, at = null;
+    indicators.forEach(r => {
+      if (r.date <= day && (!from || r.date >= from) && r.values && r.values[key] != null) { v = r.values[key]; at = r.date; }
+    });
+    return { v, at };
+  }
+  function probAt(issue, day) {
+    let s = null;
+    (issue.history || []).forEach(h => { if (h.date <= day) s = h; });
+    return s;
+  }
+
+  function glanceHTML(p) {
+    const beforeStart = addDays(p.start, -1);
+    const keys = [...new Set(indicators.flatMap(r => Object.keys(r.values || {})))];
+    const indRows = keys.map(k => {
+      let a = valueAt(k, beforeStart);
+      if (a.v == null) a = valueAt(k, p.end, p.start);
+      const b = valueAt(k, p.end);
+      if (a.v == null || b.v == null) return "";
+      const ch = a.at === b.at ? null : (b.v - a.v) / Math.abs(a.v) * 100;
+      const cls = ch == null || Math.abs(ch) < 0.05 ? "flat" : ch > 0 ? "up" : "down";
+      return `<tr><td>${esc(k)}</td><td class="num">${fmtNum(a.v)}<br><small>${esc(a.at)}</small></td>
+        <td class="num">${fmtNum(b.v)}<br><small>${esc(b.at)}</small></td>
+        <td class="num ${cls}">${ch == null ? "기록 1회" : (ch > 0 ? "+" : "") + ch.toFixed(2) + "%"}</td></tr>`;
+    }).join("");
+    const issRows = issues.map(i => {
+      const a = probAt(i, beforeStart) || (i.history || []).find(h => h.date >= p.start && h.date <= p.end);
+      const b = probAt(i, p.end);
+      const evs = (i.timeline || []).filter(e => e.date >= p.start && e.date <= p.end);
+      if (!b && !evs.length) return "";
+      let prob = "–";
+      if (b) {
+        const top = Object.entries(b.scenarios).sort((x, y) => y[1] - x[1])[0];
+        const was = a ? a.scenarios[top[0]] : null;
+        const d = was == null ? null : top[1] - was;
+        prob = `${esc(top[0])}<br><span class="num">${was == null ? "" : was + "% → "}${top[1]}%</span>` +
+          (d ? ` <span class="${d > 0 ? "up" : "down"}">(${d > 0 ? "+" : ""}${d}%p)</span>` : "");
+      }
+      return `<tr><td><b>${esc(i.title)}</b>${evs.length ? `<ul class="ev">${evs.slice(0, 3).map(e => `<li><time>${esc(e.date.slice(5))}</time>${esc(e.text)}</li>`).join("")}${evs.length > 3 ? `<li>외 ${evs.length - 3}건</li>` : ""}</ul>` : ""}</td>
+        <td>${prob}</td><td class="num">${evs.length}건</td></tr>`;
+    }).join("");
+    const made = fcAll.filter(f => f.made >= p.start && f.made <= p.end);
+    const done = fcAll.filter(f => f.resolved && f.resolved >= p.start && f.resolved <= p.end && (f.status === "발생" || f.status === "미발생"));
+    const right = done.filter(f => (f.probability >= 50) === (f.status === "발생")).length;
+    const nBrief = items.filter(b => b.date >= p.start && b.date <= p.end).length;
+    return `<h2>${esc(p.live ? p.title : "한눈에 보기")}</h2>
+      <p class="period">${p.start.replaceAll("-", ".")} ~ ${p.end.replaceAll("-", ".")} · 브리핑 ${nBrief}일치${p.live ? " · 자동 집계" : ""}</p>
+      <h3>지표 변화 (기간 직전 → 기간 말)</h3>
+      ${indRows ? `<div class="tw"><table><thead><tr><th>지표</th><th>시작</th><th>끝</th><th>변화</th></tr></thead><tbody>${indRows}</tbody></table></div>` : `<p class="empty">이 기간의 지표 기록이 아직 부족합니다. 매일 아침 한 줄씩 쌓입니다.</p>`}
+      <h3>이슈별 흐름 (가장 유력한 시나리오의 확률 변화와 주요 사건)</h3>
+      ${issRows ? `<div class="tw"><table><thead><tr><th>이슈 · 주요 사건</th><th>유력 시나리오</th><th>사건</th></tr></thead><tbody>${issRows}</tbody></table></div>` : `<p class="empty">이 기간에 기록된 이슈 변화가 없습니다.</p>`}
+      <h3>전망</h3>
+      <p class="empty">새로 기록한 전망 ${made.length}개 · 채점된 전망 ${done.length}개${done.length ? ` (방향 적중 ${right}/${done.length})` : ""}</p>
+      ${done.length ? `<ul class="ev">${done.map(f => `<li>[${esc(f.status)}] ${esc(f.claim)} (당시 ${f.probability}%)</li>`).join("")}</ul>` : ""}`;
+  }
+
+  function showSum(key) {
+    const all = periods();
+    const p = all.find(x => x.key === key) || all[0];
+    if (!p) return;
+    curSum = p.key;
+    document.getElementById("glance").innerHTML = glanceHTML(p);
+    const sv = document.getElementById("sumView");
+    if (p.markdown) {
+      sv.hidden = false;
+      sv.innerHTML = marked.parse(p.markdown);
+      sv.querySelectorAll("a").forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
+      sv.querySelectorAll("table").forEach(tb => { const w = document.createElement("div"); w.className = "table-wrap"; tb.replaceWith(w); w.appendChild(tb); });
+    } else {
+      sv.hidden = false;
+      sv.innerHTML = p.live
+        ? `<p class="status" style="padding:0">진행 중인 기간이라 해설 글은 아직 없습니다. 주간 요약은 매주 월요일, 월간 요약은 매달 1일 아침에 올라옵니다.</p>`
+        : "";
+    }
+    renderSumNav();
+  }
+
+  function renderSumNav() {
+    const all = periods();
+    const group = (label, arr) => arr.length ? `<div><h3>${label}</h3><ol>${arr.map(p => `
+      <li><button type="button" data-key="${esc(p.key)}" aria-current="${p.key === curSum}">${esc(p.live ? p.title : p.kind === "월간" ? p.start.slice(0, 7).replace("-", "년 ") + "월" : p.start.slice(5).replace("-", ".") + " ~ " + p.end.slice(5).replace("-", "."))}${p.live ? '<span class="live">자동</span>' : ""}
+      <small>${p.start.replaceAll("-", ".")} ~ ${p.end.replaceAll("-", ".")}</small></button></li>`).join("")}</ol></div>` : "";
+    const nav = document.getElementById("sumNav");
+    nav.innerHTML = group("진행 중", all.filter(p => p.live)) + group("월간 요약", all.filter(p => !p.live && p.kind === "월간")) +
+      group("주간 요약", all.filter(p => !p.live && p.kind === "주간")) +
+      (sums.length ? "" : `<p class="empty" style="font-size:12.5px;color:var(--muted);margin:0">첫 주간 요약은 월요일, 첫 월간 요약은 다음 달 1일 아침에 올라옵니다.</p>`);
+    nav.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { showSum(b.dataset.key); window.scrollTo(0, 0); }));
   }
 
   function render(data) {
     issues = data.issues || [];
     renderIssues();
-    renderForecasts(data.forecasts || [], data.score || { resolved: 0 });
+    fcAll = data.forecasts || []; fcScore = data.score || { resolved: 0 }; todayStr = data.today || "";
+    sums = data.summaries || []; indicators = data.indicators || [];
+    renderForecasts();
     try { const saved = localStorage.getItem("tab"); if (saved) setTab(saved); } catch (e) {}
     items = data.briefings || [];
     document.getElementById("updated").textContent = "갱신 " + data.updated + " · 브리핑 " + items.length + "일치 · 이슈 " + issues.length + "개";
@@ -602,6 +794,7 @@
     mediaAll = data.media || [];
     items.forEach(b => { b.plain = plain(b.markdown); b.low = b.plain.toLowerCase(); byDate.set(b.date, b); });
     renderMedia();
+    showSum(sums.length ? sums[0].key : "live-week");
     const m = location.hash.match(/^#d(\d{4})(\d{2})(\d{2})$/);
     show(m ? m[1] + "-" + m[2] + "-" + m[3] : items[0].date, { keepScroll: true });
   }

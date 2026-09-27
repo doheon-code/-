@@ -74,7 +74,17 @@
       "outcome": "재공격으로 무산됐고, 양측이 조건을 더 늘렸습니다."
      }
     ]
-   }
+   },
+   "history": [
+    {
+     "date": "2026-09-27",
+     "scenarios": {
+      "10월 중 재개방 합의": 25,
+      "협상 지속, 교착": 50,
+      "재충돌": 25
+     }
+    }
+   ]
   },
   {
    "id": "fed",
@@ -134,7 +144,17 @@
       "outcome": "인플레이션이 고착됐고, 1979~81년 볼커 의장의 강한 긴축으로 겨우 잡혔습니다."
      }
     ]
-   }
+   },
+   "history": [
+    {
+     "date": "2026-09-27",
+     "scenarios": {
+      "10월 28일 추가 인상": 70,
+      "12월로 미룸": 22,
+      "연내 동결": 8
+     }
+    }
+   ]
   },
   {
    "id": "uschina",
@@ -199,7 +219,17 @@
       "outcome": "PIIE 집계로 중국은 약속한 물량의 58%만 샀고, 에너지는 37%에 그쳤습니다."
      }
     ]
-   }
+   },
+   "history": [
+    {
+     "date": "2026-09-27",
+     "scenarios": {
+      "재연장·부분 합의": 60,
+      "만료 후 관세 인상": 25,
+      "포괄 합의": 15
+     }
+    }
+   ]
   },
   {
    "id": "kr-approval",
@@ -271,7 +301,17 @@
       "outcome": "국회 비준 없이 시행했고, 큰 정치적 역풍은 없었습니다."
      }
     ]
-   }
+   },
+   "history": [
+    {
+     "date": "2026-09-27",
+     "scenarios": {
+      "35~40% 박스권": 55,
+      "40% 이상 회복": 20,
+      "35% 미만 추가 하락": 25
+     }
+    }
+   ]
   },
   {
    "id": "nk-talks",
@@ -320,7 +360,17 @@
       "outcome": "2018년 6월 싱가포르 정상회담이 열렸지만, 2019년 2월 하노이 회담은 제재 완화 범위를 놓고 결렬됐습니다."
      }
     ]
-   }
+   },
+   "history": [
+    {
+     "date": "2026-09-27",
+     "scenarios": {
+      "교착 유지": 65,
+      "실무 접촉 개시": 25,
+      "정상회담 합의": 10
+     }
+    }
+   ]
   },
   {
    "id": "kospi",
@@ -380,7 +430,17 @@
       "outcome": "2021년 6~7월 고점 뒤 연준이 긴축하자 2022년에 약 25% 내렸습니다."
      }
     ]
-   }
+   },
+   "history": [
+    {
+     "date": "2026-09-27",
+     "scenarios": {
+      "10월 말 7,000 이상": 55,
+      "6,500~7,000": 35,
+      "6,500 미만": 10
+     }
+    }
+   ]
   },
   {
    "id": "budget2027",
@@ -433,7 +493,17 @@
       "outcome": "20년 동안 법정시한을 지킨 해는 2002년, 2014년, 2020년 세 번뿐이었고, 대부분 12월 초·중순에 처리됐습니다."
      }
     ]
-   }
+   },
+   "history": [
+    {
+     "date": "2026-09-27",
+     "scenarios": {
+      "법정시한(12월 2일) 준수": 20,
+      "12월 중 처리(시한 경과)": 65,
+      "해를 넘기거나 준예산 사태": 15
+     }
+    }
+   ]
   }
  ],
  "forecasts": [
@@ -457,7 +527,8 @@
      "name": "Chase",
      "url": "https://www.chase.com/personal/investments/learning-and-insights/article/federal-reserve-raises-rates-officials-signal-one-more-hike-in-2026"
     }
-   ]
+   ],
+   "kind": "일간"
   },
   {
    "id": "F-20260927-02",
@@ -479,7 +550,8 @@
      "name": "OilPrice",
      "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Tumbles-3-as-Iran-Floats-Hormuz-Reopening-Within-a-Week.html"
     }
-   ]
+   ],
+   "kind": "일간"
   },
   {
    "id": "F-20260927-03",
@@ -497,7 +569,8 @@
      "name": "KORI Insight",
      "url": "https://koriinsight.com/september-2026-week-5-economic-news-en/"
     }
-   ]
+   ],
+   "kind": "일간"
   },
   {
    "id": "F-20260927-04",
@@ -519,7 +592,8 @@
      "name": "톱스타뉴스",
      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16197772"
     }
-   ]
+   ],
+   "kind": "일간"
   },
   {
    "id": "F-20260927-05",
@@ -541,7 +615,8 @@
      "name": "SCMP",
      "url": "https://www.scmp.com/economy/global-economy/article/3368908/trade-truce-extension-aside-was-ai-real-xi-trump-summit-breakthrough"
     }
-   ]
+   ],
+   "kind": "일간"
   },
   {
    "id": "F-20260927-06",
@@ -563,7 +638,8 @@
      "name": "UPI",
      "url": "https://www.upi.com/Top_News/World-News/2026/09/23/korea-Lee-Jae-Myung-Donald-Trump-North-Korea-dialogue-UN-General-Assembly/1401790148809/"
     }
-   ]
+   ],
+   "kind": "일간"
   },
   {
    "id": "F-20260927-07",
@@ -584,6 +660,36 @@
     {
      "name": "네이트뉴스",
      "url": "https://m.news.nate.com/view/20260825n31433"
+    }
+   ],
+   "kind": "일간"
+  }
+ ],
+ "indicators": [
+  {
+   "date": "2026-09-27",
+   "values": {
+    "코스피": 7080.92,
+    "원/달러": null,
+    "S&P 500": 7743.41,
+    "나스닥": 27068.72,
+    "브렌트유": null,
+    "미 10년물 금리": null,
+    "미 기준금리(상단)": 4.0
+   },
+   "note": "코스피는 9/23(추석 전 마지막 거래일), 미국 지수는 9/25 종가. 원/달러는 매체별로 1,330~1,350원대로 달라 비움. 브렌트유는 보도마다 차이가 커 비움.",
+   "sources": [
+    {
+     "name": "Yahoo Finance",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html"
+    },
+    {
+     "name": "KORI Insight",
+     "url": "https://koriinsight.com/september-2026-week-5-economic-news-en/"
+    },
+    {
+     "name": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html"
     }
    ]
   }
