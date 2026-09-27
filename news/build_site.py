@@ -11,14 +11,70 @@
 import json
 import re
 import sys
+from collections import Counter
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parent
 
 DATE = re.compile(r"\d{4}-\d{2}-\d{2}")
 ISSUE_STATUS = {"진행 중", "소강", "종료"}
 FORECAST_STATUS = {"대기", "발생", "미발생", "판단불가"}
+
+
+LINK = re.compile(r"\[([^\]]+)\]\((https?://[^)\s]+)\)")
+
+# 도메인이 .kr 이 아닌 국내 매체. 여기 없고 .kr 도 아니면 해외로 분류한다.
+KOREAN_DOMAINS = {
+    "hankyung.com", "heraldcorp.com", "koreaherald.com", "koreajoongangdaily.com", "koreatimes.co.kr",
+    "newspim.com", "nate.com", "radioseoul1650.com", "koriinsight.com", "raylogue.com", "mindlenews.com",
+    "topstarnews.net", "betanews.net", "sedaily.com", "namu.wiki", "fnnews.com", "pressian.com",
+    "yna.co.kr", "chosun.com", "joongang.co.kr", "donga.com", "hani.co.kr", "mk.co.kr", "sbs.co.kr",
+    "imbc.com", "newsis.com", "ohmynews.com", "tvchosun.com", "segye.com", "munhwa.com", "hankookilbo.com",
+    "etnews.com", "kbs.co.kr", "jtbc.co.kr", "mbn.co.kr", "ytn.co.kr", "news1.kr",
+}
+
+
+def domain_of(url: str) -> str:
+    host = urlparse(url).netloc.lower().split(":")[0]
+    for prefix in ("www.", "m.", "en.", "biz.", "view.", "news.", "archives."):
+        if host.startswith(prefix):
+            host = host[len(prefix):]
+    return host
+
+
+def is_korean(domain: str) -> bool:
+    return domain.endswith(".kr") or any(domain == d or domain.endswith("." + d) for d in KOREAN_DOMAINS)
+
+
+def extract_sources(markdown: str) -> list:
+    """브리핑 본문의 링크를 모두 뽑아 섹션별 출처 목록으로 만든다 (같은 URL은 한 번만)."""
+    section, seen, out = "", set(), []
+    for line in markdown.splitlines():
+        if line.startswith("## "):
+            section = re.sub(r"\s*\(.*\)$", "", line[3:]).strip()
+        headline = ""
+        m = re.match(r"\s*-\s*\*\*(.+?)\*\*", line)
+        if m:
+            headline = m.group(1)
+        elif line.startswith("출처"):
+            headline = "시장 지표 표"
+        for name, url in LINK.findall(line):
+            if url in seen:
+                continue
+            seen.add(url)
+            d = domain_of(url)
+            out.append({"name": name.strip(), "url": url, "domain": d, "korean": is_korean(d),
+                        "section": section, "headline": headline})
+    return out
+
+
+def check_sources(value, where: str) -> None:
+    if value is None:
+        return
+    if not isinstance(value, list) or not all(isinstance(s, dict) and s.get("name") and s.get("url") for s in value):
+        fail(f"{where}.sources 는 [{{\"name\": 매체명, \"url\": 주소}}, ...] 형식이어야 합니다")
 
 
 def fail(msg: str) -> None:
@@ -43,6 +99,7 @@ def validate(tracker: dict) -> None:
         issue_ids.add(issue["id"])
         for j, t in enumerate(issue.get("timeline", [])):
             check_date(t.get("date"), f"{where}.timeline[{j}].date")
+            check_sources(t.get("sources"), f"{where}.timeline[{j}]")
         scenarios = issue.get("outlook", {}).get("scenarios", [])
         if scenarios:
             total = sum(s.get("probability", 0) for s in scenarios)
@@ -66,6 +123,7 @@ def validate(tracker: dict) -> None:
             fail(f"{where}.status 는 {sorted(FORECAST_STATUS)} 중 하나여야 합니다")
         check_date(f["made"], f"{where}.made")
         check_date(f["due"], f"{where}.due")
+        check_sources(f.get("sources"), where)
         if f["status"] != "대기":
             check_date(f.get("resolved"), f"{where}.resolved")
 
@@ -80,6 +138,21 @@ def score(forecasts: list) -> dict:
     return {"resolved": len(done), "right": right, "brier": round(brier, 3)}
 
 
+def media_summary(items: list) -> list:
+    """매체별 인용 횟수와 인용한 날짜. 같은 매체의 이름 표기가 여럿이면 가장 많이 쓴 것을 쓴다."""
+    by_domain: dict = {}
+    for b in items:
+        for s in b["sources"]:
+            m = by_domain.setdefault(s["domain"], {"domain": s["domain"], "korean": s["korean"],
+                                                   "names": Counter(), "count": 0, "dates": set()})
+            m["names"][s["name"]] += 1
+            m["count"] += 1
+            m["dates"].add(b["date"])
+    return sorted(({"domain": m["domain"], "name": m["names"].most_common(1)[0][0], "korean": m["korean"],
+                    "count": m["count"], "dates": sorted(m["dates"], reverse=True)}
+                   for m in by_domain.values()), key=lambda m: (-m["count"], m["name"]))
+
+
 def pack(work: Path, out: Path) -> None:
     items = []
     for path in sorted((work / "briefings").glob("*.md"), reverse=True):
@@ -87,7 +160,8 @@ def pack(work: Path, out: Path) -> None:
             continue
         text = path.read_text(encoding="utf-8")
         first = text.splitlines()[0] if text else ""
-        items.append({"date": path.stem, "title": first.lstrip("# ").strip(), "markdown": text})
+        items.append({"date": path.stem, "title": first.lstrip("# ").strip(), "markdown": text,
+                      "sources": extract_sources(text)})
 
     tracker_path = work / "tracker.json"
     tracker = json.loads(tracker_path.read_text(encoding="utf-8")) if tracker_path.exists() else {}
@@ -101,10 +175,16 @@ def pack(work: Path, out: Path) -> None:
         "issues": tracker.get("issues", []),
         "forecasts": forecasts,
         "score": score(forecasts),
+        "media": media_summary(items),
     }
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"{out}: 브리핑 {len(items)}개, 이슈 {len(data['issues'])}개, 전망 {len(forecasts)}개")
+    n_src = sum(len(b["sources"]) for b in items)
+    print(f"{out}: 브리핑 {len(items)}개, 이슈 {len(data['issues'])}개, 전망 {len(forecasts)}개, "
+          f"출처 {n_src}건(매체 {len(data['media'])}곳)")
+    no_src = [b["date"] for b in items if not b["sources"]]
+    if no_src:
+        print(f"경고: 출처 링크가 하나도 없는 브리핑이 있습니다: {', '.join(no_src)}")
 
 
 def unpack(src: Path, work: Path) -> None:
