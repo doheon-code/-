@@ -162,6 +162,61 @@
   article td:nth-child(2) { font-family: var(--mono); font-variant-numeric: tabular-nums; }
   .status { color: var(--muted); padding: 40px 0; }
 
+  .tabs { display: flex; gap: 4px; flex-wrap: wrap; }
+  .tabs button {
+    background: none; border: 1px solid var(--rule); color: var(--muted);
+    font: 500 14px/1 var(--sans); padding: 8px 14px; cursor: pointer;
+  }
+  .tabs button[aria-selected="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .tabs button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .shell.wide { grid-template-columns: minmax(0, 1fr); }
+  .intro { color: var(--muted); font-size: 14.5px; max-width: 72ch; margin: 0 0 20px; }
+  .filters { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .filters button {
+    font: 500 13px/1 var(--sans); padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--rule); background: var(--paper); color: var(--ink); cursor: pointer;
+  }
+  .filters button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+  .issues { display: grid; gap: 16px; }
+  .issue { background: var(--paper); border: 1px solid var(--rule); padding: clamp(18px, 3vw, 28px); }
+  .issue header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 12px; }
+  .issue h3 { margin: 0; font: 700 20px/1.35 var(--serif); text-wrap: balance; }
+  .chip { font-size: 12px; padding: 2px 8px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap; }
+  .chip.live { border-color: var(--accent); color: var(--accent); }
+  .issue .sum { margin: 10px 0 0; max-width: 72ch; }
+  .issue h4 { margin: 20px 0 8px; font: 600 12px/1 var(--sans); letter-spacing: 0.08em; color: var(--muted); }
+  .note { font-size: 13.5px; color: var(--muted); margin: 0 0 10px; max-width: 72ch; }
+  .scen { display: grid; gap: 10px; }
+  .scen .row { display: grid; grid-template-columns: minmax(0, 1fr) 48px; gap: 4px 12px; align-items: center; }
+  .scen .name { font-weight: 600; font-size: 14.5px; }
+  .scen .pct { font: 500 14px/1 var(--mono); text-align: right; font-variant-numeric: tabular-nums; }
+  .scen .bar { grid-column: 1 / -1; height: 6px; background: var(--ground); }
+  .scen .bar i { display: block; height: 100%; background: var(--accent); }
+  .scen .desc { grid-column: 1 / -1; font-size: 13.5px; color: var(--muted); }
+  .signals { margin: 0; padding-left: 1.1em; font-size: 14px; display: grid; gap: 4px; }
+  .analog { border-top: 1px solid var(--rule); padding-top: 10px; margin-top: 10px; font-size: 14px; }
+  .analog:first-of-type { border-top: 0; margin-top: 0; padding-top: 0; }
+  .analog b { font-weight: 600; }
+  .analog dl { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 4px 10px; margin: 6px 0 0; }
+  .analog dt { color: var(--muted); font-size: 13px; }
+  .analog dd { margin: 0; }
+  details.tl summary { cursor: pointer; font: 600 12px/1 var(--sans); letter-spacing: 0.08em; color: var(--muted); margin-top: 20px; }
+  details.tl ol { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 6px; font-size: 14px; }
+  details.tl time { font: 500 13px/1.6 var(--mono); color: var(--muted); margin-right: 8px; font-variant-numeric: tabular-nums; }
+  .stats { display: flex; flex-wrap: wrap; gap: 24px; margin: 0 0 20px; padding: 16px 20px; background: var(--paper); border: 1px solid var(--rule); }
+  .stats div { display: grid; gap: 2px; }
+  .stats b { font: 500 22px/1.2 var(--mono); font-variant-numeric: tabular-nums; }
+  .stats span { font-size: 12.5px; color: var(--muted); }
+  .ftable { background: var(--paper); border: 1px solid var(--rule); overflow-x: auto; }
+  .ftable table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: 14px; }
+  .ftable th, .ftable td { padding: 10px 14px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+  .ftable th { font-weight: 600; color: var(--muted); font-size: 12px; letter-spacing: 0.06em; }
+  .ftable td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .ftable .basis { display: block; color: var(--muted); font-size: 12.5px; margin-top: 2px; }
+  .st { font-size: 12px; padding: 2px 8px; white-space: nowrap; border: 1px solid var(--rule); }
+  .st.hit { color: #2f7d4a; border-color: #2f7d4a; }
+  .st.miss { color: var(--accent); border-color: var(--accent); }
+
   @media (max-width: 760px) {
     .shell { grid-template-columns: 1fr; gap: 16px; padding-block: 16px 48px; }
     nav.dates { position: static; }
@@ -176,15 +231,32 @@
 <div class="shell">
   <header class="mast">
     <h1>아침 정치경제 브리핑</h1>
+    <div class="tabs" role="tablist">
+      <button type="button" role="tab" id="tab-brief" data-tab="brief" aria-selected="true">브리핑</button>
+      <button type="button" role="tab" id="tab-issues" data-tab="issues" aria-selected="false">이슈 흐름</button>
+      <button type="button" role="tab" id="tab-fc" data-tab="fc" aria-selected="false">전망 기록</button>
+    </div>
     <span class="meta" id="updated">불러오는 중…</span>
   </header>
-  <nav class="dates" aria-label="날짜별 브리핑">
+  <nav class="dates" id="dateNav" aria-label="날짜별 브리핑">
     <h2>지난 브리핑</h2>
     <ol id="dateList"></ol>
   </nav>
   <main>
-    <div class="jump" id="jump"></div>
-    <article id="view"><p class="status">브리핑을 불러오는 중입니다.</p></article>
+    <section id="pane-brief">
+      <div class="jump" id="jump"></div>
+      <article id="view"><p class="status">브리핑을 불러오는 중입니다.</p></article>
+    </section>
+    <section id="pane-issues" hidden>
+      <p class="intro">매일 브리핑을 쓰면서 계속 추적하는 이슈입니다. 전망 확률 옆에 근거가 시장 가격인지 판단인지 적혀 있고, 과거 사례는 비슷한 점과 다른 점을 함께 보여 줍니다.</p>
+      <div class="filters" id="areaFilters"></div>
+      <div class="issues" id="issueList"></div>
+    </section>
+    <section id="pane-fc" hidden>
+      <p class="intro">마감일과 확률을 정해 둔 전망들입니다. 마감일이 지나면 결과를 채점하고, 기록은 지우거나 고치지 않습니다. Brier 점수는 0에 가까울수록 정확하며, 모든 전망을 50%로 찍으면 0.25가 나옵니다.</p>
+      <div class="stats" id="fcStats"></div>
+      <div class="ftable" id="fcTable"></div>
+    </section>
   </main>
 </div>
 
@@ -224,9 +296,79 @@
     try { history.replaceState(null, "", "#d" + item.date.replaceAll("-", "")); } catch (e) {}
   }
 
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  let issues = [], area = "전체";
+
+  function setTab(name) {
+    document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", String(b.dataset.tab === name)));
+    ["brief", "issues", "fc"].forEach(n => { document.getElementById("pane-" + n).hidden = n !== name; });
+    document.getElementById("dateNav").hidden = name !== "brief";
+    document.querySelector(".shell").classList.toggle("wide", name !== "brief");
+    try { localStorage.setItem("tab", name); } catch (e) {}
+  }
+  document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => setTab(b.dataset.tab)));
+
+  function renderIssues() {
+    const areas = ["전체", ...new Set(issues.map(i => i.area))];
+    const f = document.getElementById("areaFilters");
+    f.innerHTML = areas.map(a => `<button type="button" aria-pressed="${a === area}" data-area="${esc(a)}">${esc(a)}</button>`).join("");
+    f.querySelectorAll("button").forEach(b => b.addEventListener("click", () => { area = b.dataset.area; renderIssues(); }));
+    const shown = issues.filter(i => area === "전체" || i.area === area);
+    document.getElementById("issueList").innerHTML = shown.map(i => {
+      const o = i.outlook || {};
+      const scen = (o.scenarios || []).map(s => `
+        <div class="row"><span class="name">${esc(s.name)}</span><span class="pct">${s.probability}%</span>
+        <span class="bar"><i style="width:${Number(s.probability) || 0}%"></i></span>
+        <span class="desc">${esc(s.text)}</span></div>`).join("");
+      const sig = (o.signals || []).map(s => `<li>${esc(s)}</li>`).join("");
+      const an = (o.analogues || []).map(a => `
+        <div class="analog"><b>${esc(a.case)}</b> <span class="chip">${esc(a.period)}</span>
+        <dl><dt>비슷한 점</dt><dd>${esc(a.similar)}</dd><dt>다른 점</dt><dd>${esc(a.different)}</dd><dt>당시 결과</dt><dd>${esc(a.outcome)}</dd></dl></div>`).join("");
+      const tl = (i.timeline || []).map(t => `<li><time>${esc(t.date)}</time>${esc(t.text)}</li>`).join("");
+      return `<section class="issue">
+        <header><h3>${esc(i.title)}</h3><span class="chip">${esc(i.area)}</span>
+        <span class="chip ${i.status === "진행 중" ? "live" : ""}">${esc(i.status)}</span>
+        <span class="chip">갱신 ${esc(i.updated)}</span></header>
+        <p class="sum">${esc(i.summary)}</p>
+        ${scen ? `<h4>전망</h4><p class="note">${esc(o.text)}</p><div class="scen">${scen}</div>` : ""}
+        ${sig ? `<h4>판단을 바꿀 신호</h4><ul class="signals">${sig}</ul>` : ""}
+        ${an ? `<h4>과거 비슷한 사례</h4>${an}` : ""}
+        ${tl ? `<details class="tl"><summary>경과 ${(i.timeline || []).length}건</summary><ol>${tl}</ol></details>` : ""}
+      </section>`;
+    }).join("") || '<p class="status">추적 중인 이슈가 없습니다.</p>';
+  }
+
+  function renderForecasts(list, sc) {
+    const titles = Object.fromEntries(issues.map(i => [i.id, i.title]));
+    const pending = list.filter(f => f.status === "대기").length;
+    document.getElementById("fcStats").innerHTML = `
+      <div><b>${list.length}</b><span>전체 전망</span></div>
+      <div><b>${pending}</b><span>결과 대기</span></div>
+      <div><b>${sc.resolved ? sc.right + "/" + sc.resolved : "–"}</b><span>방향 적중 (50% 기준)</span></div>
+      <div><b>${sc.resolved ? sc.brier.toFixed(3) : "–"}</b><span>Brier 점수</span></div>`;
+    const rows = [...list].sort((a, b) => a.due.localeCompare(b.due)).map(f => {
+      let st = `<span class="st">${esc(f.status)}</span>`;
+      if (f.status === "발생" || f.status === "미발생") {
+        const right = (f.probability >= 50) === (f.status === "발생");
+        st = `<span class="st ${right ? "hit" : "miss"}">${esc(f.status)} · ${right ? "맞음" : "틀림"}</span>`;
+      }
+      return `<tr><td class="num">${esc(f.due)}</td>
+        <td>${esc(f.claim)}<span class="basis">${esc(f.basis)}${f.note ? " · 판정: " + esc(f.note) : ""}</span></td>
+        <td class="num">${f.probability}%</td><td>${esc(titles[f.issue] || f.issue)}</td><td>${st}</td>
+        <td class="num">${esc(f.made)}</td></tr>`;
+    }).join("");
+    document.getElementById("fcTable").innerHTML = rows
+      ? `<table><thead><tr><th>마감</th><th>전망</th><th>확률</th><th>이슈</th><th>결과</th><th>작성</th></tr></thead><tbody>${rows}</tbody></table>`
+      : '<p class="status" style="padding:16px">아직 기록된 전망이 없습니다.</p>';
+  }
+
   function render(data) {
+    issues = data.issues || [];
+    renderIssues();
+    renderForecasts(data.forecasts || [], data.score || { resolved: 0 });
+    try { const saved = localStorage.getItem("tab"); if (saved) setTab(saved); } catch (e) {}
     items = data.briefings || [];
-    document.getElementById("updated").textContent = "갱신 " + data.updated + " · " + items.length + "일치";
+    document.getElementById("updated").textContent = "갱신 " + data.updated + " · 브리핑 " + items.length + "일치 · 이슈 " + issues.length + "개";
     if (!items.length) { view.innerHTML = '<p class="status">아직 올라온 브리핑이 없습니다.</p>'; return; }
     list.innerHTML = "";
     items.forEach(b => {
