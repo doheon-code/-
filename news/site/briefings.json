@@ -1,195 +1,179 @@
 {
- "updated": "2026-09-28 22:37 KST",
+ "updated": "2026-09-28 23:13 KST",
  "today": "2026-09-28",
  "briefings": [
   {
    "date": "2026-09-28",
    "title": "데일리 정치·경제 브리핑 — 2026년 9월 28일 (월)",
-   "markdown": "# 데일리 정치·경제 브리핑 — 2026년 9월 28일 (월)\n\n> 오늘의 핵심 3줄\n> 1. 이란 외무장관 아락치가 \"새 공격이 오면 '둠스데이 전쟁'까지 각오하고 있다\"면서도 외교 문은 열어두겠다고 밝혔고, 트럼프 대통령은 참모들에게 중간선거(11월 3일) 이후 재공습이 유력하다고 말한 것으로 보도됐습니다([CNBC](https://www.cnbc.com/2026/09/27/iran-foreign-minister-keeps-indirect-talks-with-us-open-state-media.html), [Washington Times](https://www.washingtontimes.com/news/2026/sep/27/iran-says-ready-doomsday-onslaught-us-attacks-trump-rejects-ceasefire/)).\n> 2. 미·중 무역합의 세부 내용이 오늘(28일) 공개될 예정이며, 사전 예고에 따르면 펜타닐 관세를 20%→10%로 낮춰 대중 관세 전체가 41%→31%로 내려갑니다([Fox News](https://www.foxnews.com/politics/us-china-strike-deal-lower-tariffs-30b-goods-trump-xi-washington-summit), [한국경제](https://www.hankyung.com/article/202609266117i)).\n> 3. (정정) 정기국회는 이미 9월 1일 개회했고 820조 9,000억원 규모 2027년도 예산안도 9월 3일 국회에 제출됐습니다. 10월 6~27일 국정감사 이후 11월부터 예산 심사가 본격화됩니다([뉴스톱](https://www.newstopkorea.com/news/articleView.html?idxno=47402), [한국농촌경제신문](https://www.kenews.co.kr/news/article.html?no=89986)).\n\n## 📋 핵심 비교\n\n| 이슈 | 지난주까지 | 오늘 달라진 점 | 의미 |\n|---|---|---|---|\n| 호르무즈·미이란 | 이란 '7일 내 재개방' 제안, 트럼프 거부 | 이란 \"둠스데이 전쟁 각오\"하면서도 외교 문 유지, 트럼프 \"중간선거 뒤 재공습 유력\" 보도 | 단기 합의 가능성은 낮아지고 재충돌 위험은 커짐 (재개방 25→20%, 재충돌 25→30%) |\n| 미·중 무역 | 휴전 2개월 연장, 세부안 미공개 | 오늘 세부안 공개 예정, 대중 관세 41→31% 예고 | 관세 부담 완화 신호. 반도체 수출통제는 제외 |\n| 연준 | 10월 인상 확률 약 50% | 약 69~73% (9/23 기준) | 금리·달러 쪽 부담 요인 |\n| 코스피·반도체 | 9/23 7,080.92, 연휴 휴장 | 삼성전자·SK하이닉스 3분기 이익 전망 5%·2% 상향, 오늘 거래 재개 | 10월 말 7,000 이상 전망 55→60% |\n| 2027년 예산안 | '10월 1일 개회'로 잘못 적음 | 9/1 개회·9/3 제출로 바로잡음, 11월 예결위 심사 | 심사 일정 정정 |\n\n### 입장 비교 — 호르무즈 협상\n\n| 쟁점 | 미국 | 이란 |\n|---|---|---|\n| 해상 봉쇄 | 해제할 뜻 없음 | 해제를 재개방의 전제 조건으로 요구 |\n| 협상 | 대화는 열어 두되 서두를 이유 없다는 입장 | \"외교는 결코 실패하지 않는다\", 간접 대화 유지 |\n| 군사 행동 | 중간선거(11/3) 뒤 재공습 유력 보도(WSJ 인용) | 새 공격이 오면 \"둠스데이 전쟁\"까지 각오 |\n\n## 🔀 오늘의 흐름도\n\n```flow\ntitle: 호르무즈 교착이 물가·금리와 한국 정치로 번지는 경로\n트럼프, 이란 제안 거부* -> 호르무즈 봉쇄 지속: 협상 교착\n호르무즈 봉쇄 지속 -> 브렌트유 100달러대: 공급 차질\n브렌트유 100달러대 -> 미국 물가 부담: 에너지 가격\n미국 물가 부담 -> 연준 10월 인상 확률 약 70%: 긴축 기대\n연준 10월 인상 확률 약 70% -> 미 10년물 5%대: 금리 상승\n호르무즈 봉쇄 지속 -> 한국에 파병 요청: 미국 압박\n한국에 파병 요청 -> 대통령 지지율 37%: 국내 여론 부담\n```\n\n## 🌍 세계 정치\n\n- **이란 외무장관 \"둠스데이 전쟁 각오\", 트럼프는 중간선거 후 재공습 시사** — 아락치 외무장관은 26일(현지시간) NBC \"Meet the Press\"에 출연해 새로운 공격이 오면 \"파국적(doomsday) 전쟁\"까지 감당할 각오라면서도 \"외교는 결코 실패하지 않는다\"며 대화 가능성을 열어뒀습니다. 그는 이란의 7일 재개방 제안이 6월 이슬라마바드 양해각서 이행(동결자산 120억 달러 해제, 원유 제재 해제, 항구 봉쇄 해제)을 앞당겨 이행해 달라는 것이었다고 설명했습니다. 트럼프 대통령은 이 제안을 거부했고, 참모들에게는 11월 3일 중간선거 이후 재공습이 \"유력하다\"고 말한 것으로 전해졌습니다(WSJ 인용). ([CNBC](https://www.cnbc.com/2026/09/27/iran-foreign-minister-keeps-indirect-talks-with-us-open-state-media.html), [Washington Times](https://www.washingtontimes.com/news/2026/sep/27/iran-says-ready-doomsday-onslaught-us-attacks-trump-rejects-ceasefire/))\n- **영국 미군기지 인근서 테러 예비 혐의 5명 체포** — 잉글랜드 남서부 RAF 페어포드 인근 마을에서 26~27일 밤 5명이 폭발물법 위반 및 테러행위 예비 혐의로 체포됐습니다. 트럭 3대를 두고 폭발물 전문가들이 조사 중이며 인근 85가구가 예방적으로 대피했습니다. 이 기지는 지난 2월부터 미군이 이란 공습에 투입한 B-1·B-52 폭격기의 거점으로 쓰였습니다. ([CNN](https://www.cnn.com/2026/09/27/uk/fairford-arrests-uk-raf-us-intl), [NBC News](https://www.nbcnews.com/world/united-kingdom/men-arrested-suspicion-explosives-offences-us-air-base-britain-rcna600052))\n- **러시아·우크라이나, 공습 계속** — 27일 러시아의 공격으로 우크라이나 두 도시에서 최소 3명이 숨졌고 키이우 여러 지역이 타격을 입었습니다. 최근 몇 주 동안 러시아의 공습은 야간 위주에서 낮 시간대까지 거의 끊이지 않는 양상으로 바뀌었습니다. ([US News](https://www.usnews.com/news/world/articles/2026-09-27/russian-attacks-kills-three-in-ukrainian-cities-strikes-hit-kyiv-districts-officials-say))\n- **가자 휴전 위반 계속** — 지난해 10월 발효된 가자 휴전이 이어지는 가운데, 27일 이스라엘군 공격으로 가자 남부에서 팔레스타인 주민 1명이 숨지고 최소 7명이 다쳤습니다. ([Anadolu/AA](https://www.anews.com.tr/middle-east/2026/09/27/israeli-army-kills-palestinian-wounds-7-others-in-new-gaza-truce-violations))\n\n## 💹 세계 경제·시장 (9/25 금요일 뉴욕 마감 기준 — 주말 휴장, 변동 없음)\n\n| 지표 | 값 | 변동 |\n|---|---|---|\n| 다우존스 | 51,828.62 | +0.93% |\n| S&P 500 | 7,743.41 | +0.51% |\n| 나스닥 | 27,068.72 | +0.48% |\n| 브렌트유 | 104.32달러 | 이란 관련 완화 기대로 하락 |\n| 미 10년물 국채 금리 | 5.17% | 주 초 급등 뒤 안정 |\n| 10월 인상 확률(CME FedWatch, 9/23) | 약 69~73% | 9월 중순 약 50%에서 상승 |\n\n출처: [CNBC](https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html), [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html), [WTOP](https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-25-2026)\n\n- **뉴욕 3대 지수, 주간 상승 마감** — 다우·S&P·나스닥이 모두 주간 기준 상승했습니다(다우 3주 연속 하락 뒤 반등, 나스닥100은 주간 +2.1%). 미·이란이 항구 봉쇄 해제를 논의한다는 보도로 유가가 내리고, 주 초 급등했던 국채 금리도 주 후반 안정되며 위험선호가 살아났습니다. ([CNBC](https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html), [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html))\n- **연준 10월 인상 확률, 9월 중순 대비 크게 상승** — 월러·바 등 연준 인사의 매파적 발언과 물가 지표를 계기로 CME FedWatch 기준 10월 28일 인상 확률이 9월 중순 약 50%에서 9월 23일 69~73%로 뛰었습니다. ([CNBC](https://www.cnbc.com/2026/09/23/market-sees-next-fed-hike-in-october-following-barr-comments-hot-inflation.html))\n- **미·중 무역합의 세부안, 오늘(28일) 공개** — 그리어 USTR 대표는 세부 발표를 앞두고 펜타닐 관세를 20%에서 10%로 낮춰 중국산 제품 전체 관세율을 41%에서 31%로 내리는 방향이라고 예고했습니다. 중국은 대두 등 미국산 농산물 추가 구매와 반도체 제조에 필요한 희토류 공급을 약속했고, 2027~28년 미국산 석탄을 매년 최소 1,000만 톤 수입하기로 했습니다. 반도체 수출통제는 이번 논의에 포함되지 않았습니다. ([Fox News](https://www.foxnews.com/politics/us-china-strike-deal-lower-tariffs-30b-goods-trump-xi-washington-summit), [한국경제](https://www.hankyung.com/article/202609266117i))\n\n## 🇰🇷 한국 정치\n\n- **(정정) 정기국회는 9월 1일 이미 개회, 예산안도 9월 3일 국회 제출 완료** — 2026년도 정기국회는 9월 1일 개회식을 열고 12월 9일까지 100일간 운영됩니다. 정부는 9월 1일 국무회의에서 820조 9,000억원 규모(올해 대비 12.8%↑, 최초 800조원 돌파) 2027년도 예산안을 의결해 9월 3일 국회에 제출했습니다. 10월 6일부터 27일까지 국정감사가 진행되고, 이후 11월부터 예산결산특별위원회 심사가 시작됩니다. ([뉴스톱](https://www.newstopkorea.com/news/articleView.html?idxno=47402), [한국농촌경제신문](https://www.kenews.co.kr/news/article.html?no=89986), [머니투데이](https://www.mt.co.kr/politics/2026/08/31/2026083015191690580))\n- **지지율은 빠졌지만 여야 지지율은 '제자리'** — 한국갤럽 조사에서 이재명 대통령 직무 긍정률이 4주 연속(40→38→37%) 내렸지만, 같은 기간 더불어민주당(약 40%대)과 국민의힘(27~30%대) 지지율은 큰 변화가 없었습니다. 대통령 지지율 하락이 야당 반사이익으로 이어지지 않고 있다는 분석입니다. ([파이낸셜뉴스](https://www.fnnews.com/news/202609250700597659))\n- **호르무즈 파병 논의 지속** — 미국은 해상 초계기·군수지원함·기뢰제거 인력 파병을 요청 중이고, 이재명 대통령은 앞선 9월 18일 기자회견에서 \"전쟁에 직접 관여하는 파병은 없다\"는 원칙을 재확인하면서 청해부대의 임무·활동구역을 넓히는 방안은 검토하고 있다고 밝혔습니다. 국민의힘은 그동안 어떤 형태든 파병에는 국회 동의가 필요하다는 입장을 유지하고 있습니다. ([뉴스1](https://www.news1.kr/diplomacy/defense-diplomacy/6295274), [아주경제](https://www.ajunews.com/view/20260907112149450))\n\n## 🇰🇷 한국 경제\n\n- **삼성전자·SK하이닉스 3분기 실적 전망 상향** — 3개월 전과 비교해 삼성전자 3분기 영업이익 전망치는 105조9,030억원에서 111조3,772억원으로 5%, SK하이닉스는 76조9,134억원에서 78조1,291억원으로 2% 높아졌습니다. 증권사 3곳 이상이 전망치를 낸 232개 상장사 중 127곳(55%)의 영업이익 전망이 3개월 전보다 높아졌고, 전체 합계는 4% 늘었습니다. 코스피는 추석 연휴 뒤 오늘(28일) 거래를 다시 시작합니다. ([베타뉴스](https://www.betanews.net/article/view/beta202609270001), [파이낸셜뉴스](https://www.fnnews.com/news/202609270715141983))\n- **원화 강세 지속, 원/달러 1,355원대** — 25일 원/달러 환율은 전날보다 9.99원 내린 1,355.23원에 마감했습니다. 유가 하락과 단기 차익실현, 수출기업의 달러 매도 물량이 배경으로 꼽힙니다. ([블록미디어](https://www.blockmedia.co.kr/archives/1144385), [머니투데이](https://www.mt.co.kr/economy/2026/09/22/2026092216312189980))\n- **9월 소비자심리지수 소폭 반등, 체감경기는 여전히 냉랭** — 9월 소비자심리지수(CCSI)는 106.6으로 전월보다 2.1포인트 올랐지만, 집값 상승과 물가 불안 때문에 서민 체감경기는 여전히 냉랭하다는 평가가 나옵니다. ([파이낸셜뉴스](https://www.fnnews.com/news/202609221727422518))\n\n## 🔭 전망과 과거 사례\n\n확률 옆 괄호는 근거의 종류입니다. **시장 가격**은 돈이 걸린 수치이고, **판단**은 시장 가격이 없어 사실을 바탕으로 추정한 값입니다. 전체 이슈와 전망 기록은 웹페이지의 \"이슈 흐름\"과 \"전망 기록\" 탭에서 볼 수 있습니다.\n\n### 호르무즈 해협과 미·이란 협상\n- **지금 상황**: 트럼프 대통령이 이란의 7일 내 재개방 제안을 거부했고, 이란 외무장관은 \"둠스데이 전쟁\"까지 각오한다면서도 외교 문은 닫지 않았습니다. 트럼프 대통령은 참모들에게 중간선거(11월 3일) 이후 재공습이 유력하다고 말한 것으로 보도됐습니다.\n- **전망** (판단): 10월 중 재개방 합의 약 20% · 협상 지속과 교착 약 50% · 재충돌 약 30%\n- **판단을 바꿀 신호**: 미국의 봉쇄 해제 조건 언급 여부, 호르무즈 통항 선박 수, 그리고 새로 나온 신호인 미국 중간선거(11월 3일) 이후 군사행동 재개 가능성\n- **과거 비슷한 사례 — 이란·이라크 전쟁 말기 '유조선 전쟁'(1987~88)**: 비슷한 점은 이란이 해협 통항을 지렛대로 삼고 미국이 해군력으로 맞섰다는 것입니다. 다른 점은 당시엔 해협 문제가 전쟁에 딸린 문제였던 반면 지금은 미국의 봉쇄와 이란의 해협 통제가 정면으로 맞서 있다는 것입니다. 당시 결과는 1988년 7월 이란이 유엔 결의 598호를 받아들이면서 약 1년 만에 끝났습니다.\n\n### 코스피 7,000과 반도체 쏠림\n- **지금 상황**: 코스피는 9월 23일 종가 7,080.92로 7,000선 위에 있고, 오늘(28일) 추석 연휴 뒤 거래를 재개합니다. 삼성전자·SK하이닉스의 3분기 영업이익 전망치가 3개월 전보다 각각 5%·2% 높아지는 등 반도체 실적 기대가 개선됐습니다.\n- **전망** (판단): 10월 말 7,000 이상 약 60% · 6,500~7,000 약 30% · 6,500 미만 약 10%\n- **판단을 바꿀 신호**: 10월 1일 발표되는 9월 수출(반도체), 삼성전자·SK하이닉스 3분기 실적 발표, 원/달러 환율, 외국인 순매수 흐름\n- **과거 비슷한 사례 — 반도체 슈퍼사이클 고점(2017~2018)**: 비슷한 점은 삼성전자·SK하이닉스가 주도한 사상 최고치였고 수출이 반도체에 쏠려 있었다는 것입니다. 다른 점은 지금은 AI 수요라는 구조적 요인이 있어 당시 메모리 가격 사이클과 수요의 성격이 다르다는 것입니다. 당시 결과는 2018년 1월 2,598 고점을 찍은 뒤 미·중 무역분쟁과 연준 인상이 겹쳐 그해 약 17% 내렸습니다.\n\n### 2027년도 예산안(820조원) 국회 심사\n- **지금 상황**: 예산안은 이미 9월 3일 국회에 제출됐고, 10월 6~27일 국정감사를 거쳐 11월부터 예산결산특별위원회 심사가 시작됩니다. 민주당은 \"담대한 투자\", 국민의힘은 \"재정 폭주\"라며 맞서고 있습니다.\n- **전망** (판단, 기저율 근거): 법정시한(12월 2일) 준수 약 20% · 시한을 넘겨 12월 중 처리 약 65% · 해를 넘기거나 준예산 사태 약 15%\n- **판단을 바꿀 신호**: 10월 국정감사 결과와 쟁점, 부동산 세제·사법개혁 법안 협상 진척, 여야 원내대표 협상 결렬·재개 여부\n- **과거 비슷한 사례 — 역대 예산안 법정시한 준수 기록(2002~2021)**: 비슷한 점은 매년 12월 2일 법정시한을 두고 여야가 예산안을 심사한다는 틀이 같다는 것입니다. 다른 점은 이번에는 국회선진화법(2014년 도입)의 자동 부의 규정이 적용되는 시기이고 여당이 단점정부를 구성하고 있다는 것입니다. 당시 결과는 20년 동안 법정시한을 지킨 해가 2002년, 2014년, 2020년 세 번뿐이었고, 대부분 12월 초·중순에 처리됐습니다.\n\n## ✅ 지난 전망 점검\n- 마감일이 지났거나 결과가 나온 전망이 아직 없습니다. 가장 빠른 마감은 10월 28일(연준 결정)입니다.\n\n## 📅 다가오는 일정\n\n- 9/28(월) — 국내 증시 거래 재개, 미·중 무역합의 세부 관세·품목 공개\n- 9/29(화) — 한국은행 9월 기업경기조사·경제심리지수 발표\n- 9/30(수) — 국가데이터처 8월 산업활동동향(생산·소비·투자) 발표\n- 10/6~27 — 국정감사(상임위별)\n- 10/28 — 연준 FOMC 결정(10월 인상 여부)\n- 11/3 — 미국 중간선거\n- 11월~ — 국회 예산결산특별위원회 심사 시작(법정시한 12/2)\n- 계속 — 미·이란 호르무즈 협상 및 한국 파병 여부, 러-우 공습, 코스피·반도체 3분기 실적 시즌\n\n---\n*자동 생성: 검색 결과를 바탕으로 한 요약입니다. 전망은 확률 추정일 뿐이며 투자 판단의 근거로 쓰지 마세요.*\n",
+   "markdown": "# 데일리 정치·경제 브리핑 — 2026년 9월 28일 (월)\n\n> 오늘의 핵심 3줄\n> 1. 코스피가 미국 10년물 국채금리 급등(장중 5.2%대, 2007년 이후 최고 수준)과 삼성전자·SK하이닉스 5%대 급락 여파로 2.70% 내린 6,889.74에 마감해 7,000선이 무너졌습니다([이투데이](https://www.etoday.co.kr/news/view/2629968), [한국경제](https://www.hankyung.com/article/2026092898206)).\n> 2. 트럼프 대통령이 이란의 호르무즈 재개방 제안 거부를 재확인했고 브렌트유는 4% 급등해 108달러대로 올랐습니다. 다만 페제시키안 이란 대통령은 미국이 '정권교체 의도가 없음'을 보이면 핵 프로그램 제한을 논의할 용의가 있다고 밝혔습니다([Fox News](https://www.foxnews.com/live-news/iran-war-strait-of-hormuz-donald-trump-09-27-26), [뉴스핌](https://www.newspim.com/news/view/20260928001100)).\n> 3. 리얼미터 조사에서 이재명 대통령 지지율이 2주 연속 상승해 37.9%를 기록했습니다. 3주 연속 하락 중인 한국갤럽과는 흐름이 엇갈립니다([머니투데이](https://www.mt.co.kr/politics/2026/09/28/2026092807591563636), [파이낸셜뉴스](https://www.fnnews.com/news/202609280801438602)).\n\n## 📋 핵심 비교\n\n| 이슈 | 지난번까지 | 오늘 달라진 점 | 의미 |\n|---|---|---|---|\n| 코스피·반도체 | 9/23 종가 7,080.92, 3분기 실적 전망 개선 | 美 국채금리 급등·반도체 5%대 급락에 2.70%↓ 6,889.74, 7,000선 붕괴 | 10월 말 7,000 이상 전망 60→40% |\n| 美 국채금리·연준 | 5.17%(9/25), 10월 인상확률 69~73% | 장중 5.2%대(2007년 이후 최고), 인상확률 72.3% | 긴축 기대 강화, 신흥국 통화·증시 부담 |\n| 호르무즈·유가 | 브렌트유 104.32달러, 트럼프 제안 거부 | 거부 재확인 + 이란 대통령 조건부 대화 용의, 유가 4%↑ 108달러대 | 단기 타결 기대는 낮지만 대화 채널은 유지 |\n| 대통령 지지율 | 갤럽 37%, 3주 연속 하락 | 리얼미터 37.9%, 2주 연속 상승(인적쇄신·순방외교 효과) | 조사기관별 엇갈림, 40%대 회복 확률 20→30% |\n| 북·미 대화 | 이 대통령 유엔서 촉구, 북 무응답 | 김여정 \"정상 관계 나쁘지 않다\", 백악관도 소통 의지 확인 | 실무 접촉 확률 25→32%, 비핵화 대화는 여전히 거부 |\n\n### 입장 비교 — 미·이란 핵협상 조건\n\n| 쟁점 | 미국(트럼프) | 이란(페제시키안) |\n|---|---|---|\n| 군사 옵션 | 중간선거(11/3) 전 추가 공격 가능성도 배제하지 않음 | 새 공격이 오면 \"둠스데이 전쟁\"까지 각오 |\n| 협상 조건 | 봉쇄 해제할 뜻 없음, 서두를 이유 없다는 입장 | 미국이 정권교체 의도가 없음을 먼저 보여야 협상 가능 |\n| 핵 프로그램 | 이란은 핵무기를 절대 가질 수 없다는 입장 유지 | 조건이 맞으면 핵 프로그램 제한 논의 용의 있다고 밝힘 |\n\n## 🔀 오늘의 흐름도\n\n```flow\ntitle: 미국 국채금리 급등과 이란 리스크가 겹치며 코스피 7,000선이 무너진 경로\n트럼프, 이란 제안 재차 거부 -> 브렌트유 108달러대: 공급 차질\n브렌트유 108달러대 -> 연준 10월 인상 확률 72%: 긴축 기대\n연준 10월 인상 확률 72% -> 미 10년물 금리 5.2%대*: 금리 급등\n미 10년물 금리 5.2%대* -> 반도체주 5%대 급락: 밸류 부담\n반도체주 5%대 급락 -> 코스피 7,000선 붕괴: 대형주 쏠림\n코스피 7,000선 붕괴 -> 원/달러 1,365원대: 외국인 매도\n```\n\n## 🌍 세계 정치\n\n- **트럼프, 이란 제안 재거부 확인…페제시키안 대통령은 조건부 핵협상 용의 시사** — 트럼프 대통령은 27일(현지시간) 폭스뉴스에 \"곧 이란과의 전쟁에서 이길 것\"이라고 말하며 중간선거(11월 3일) 전 추가 군사 공격 가능성도 배제하지 않았습니다. 반면 페제시키안 이란 대통령은 협상은 계속하고 있으며 미국이 '정권교체를 원하지 않는다'는 점을 먼저 보이면 핵 프로그램 제한을 논의할 용의가 있다고 밝혔습니다. ([Fox News](https://www.foxnews.com/live-news/iran-war-strait-of-hormuz-donald-trump-09-27-26))\n- **우크라이나, 러시아 방산시설·유류저장고 타격…미국은 패트리어트 면허생산 승인** — 우크라이나군은 러시아 아조프의 미사일 부품 생산시설과 크라스노다르주 유류저장고를 드론으로 타격했다고 밝혔습니다. 러시아는 우크라이나 제철소(인터파이프 등)를 공격해 최소 4명이 숨졌습니다. 트럼프 대통령은 우크라이나에 패트리어트 요격미사일 면허생산을 승인했지만, 방공 탄약 부족이라는 당장의 문제를 해결하지는 못한다는 지적이 나옵니다. ([Forbes](https://www.forbes.com/sites/katyasoldak/2026/09/28/monday-september-28-russias-war-on-ukraine-news-and-information-from-ukraine/))\n- **프랑스 극우 국민연합, 상원 첫 원내교섭단체 구성** — 르펜이 이끄는 국민연합(RN)이 27일 간선으로 치러진 상원 선거에서 동맹 세력과 함께 14석을 확보해 348석 상원에서 사상 처음 원내교섭단체를 꾸렸습니다. 르펜은 \"역사적 승리\"라고 평가했습니다. 2027년 대선을 앞두고 RN의 세 확장을 보여주는 결과입니다. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/28/frances-far-right-national-rally-gains-ground-in-senate-vote), [France24](https://www.france24.com/en/france/20260927-france-s-far-right-gains-ground-in-indirect-senate-elections))\n- **슬로바키아 피초 총리, 연립 갈등에 내년 1월 조기총선 가능성 시사** — 피초 총리는 27일 연립정당(SNS) 소속 환경장관 경질 요구를 둘러싼 내분으로 의회 과반이 흔들리면 내년 1월 조기총선도 감수하겠다고 밝혔습니다. 연정 파트너인 흘라스당은 임기 단축에 반대하고 있습니다. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-27/slovakia-s-fico-warns-of-snap-vote-as-coalition-majority-at-risk))\n\n## 💹 세계 경제·시장\n\n| 지표 | 값 | 변동 |\n|---|---|---|\n| 다우존스(9/25 마감) | 51,828.62 | +0.93% |\n| S&P 500(9/25 마감) | 7,743.41 | +0.51% |\n| 나스닥(9/25 마감) | 27,068.72 | +0.48% |\n| 브렌트유(11월물, 9/28) | 108.59달러 | +4% |\n| 미 10년물 국채금리(9/28 장중) | 약 5.20~5.23% | 2007년 이후 최고 수준 |\n| 10월 인상 확률(CME FedWatch, 9/28) | 72.3% | 9/23 69~73%에서 소폭 상승 |\n\n출처: [이투데이](https://www.etoday.co.kr/news/view/2629968), [뉴스핌](https://www.newspim.com/news/view/20260928001100), [머니투데이](https://www.mt.co.kr/stock/2026/09/28/2026092814221429351)\n\n- **美 국채금리 2007년 이후 최고치, 뉴욕 증시 개장 전 선물은 하락** — 미국 10년물 국채금리는 28일(현지시간 이른 거래) 장중 5.2%대까지 올라 2007년 중반 이후 최고 수준을 기록했습니다. 뉴욕 증시 개장 전에는 S&P500 선물 -0.42%, 나스닥100 선물 -1%, 다우선물 -0.4%로 이란 리스크·유가 상승·AI 밸류에이션 우려가 함께 반영됐습니다. 정규장은 이 브리핑 작성 시점(한국시간 저녁) 기준 개장 직후로 아직 종가가 나오지 않았습니다. ([Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-monday-september-28-dow-sp-500-nasdaq-080420627.html))\n- **브렌트유 4% 급등, 108달러대** — 트럼프 대통령의 이란 제안 재거부가 확인되면서 11월 인도분 브렌트유 선물이 배럴당 108.59달러까지 올랐습니다. WTI도 4.3% 오른 96.41달러였습니다. ([뉴스핌](https://www.newspim.com/news/view/20260928001100))\n- **미·중, 관세 인하 품목 목록 공개하고 휴전 내년 1월까지 연장** — 미국은 소형 가전·완구·연말연시 장식품·유아용 카시트 등 77개 품목, 중국은 농산물·수산물·목재·화장품·의료기기 등 1,619개 품목의 관세를 내리기로 하고 세부 목록을 공개했습니다. 무역 휴전은 내년 1월까지 연장됐고, 중국은 2027~28년 미국산 석탄을 매년 최소 1,000만 톤 수입하기로 했습니다. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/us-releases-details-on-30-billion-of-goods-with-tariff-cuts), [Axios](https://www.axios.com/2026/09/26/us-china-tariffs-trade-30-billion))\n\n## 🇰🇷 한국 정치\n\n- **리얼미터 지지율 2주 연속 상승 37.9%, 갤럽은 3주 연속 하락 — 조사기관별 엇갈림** — 리얼미터 조사(9/28 발표)에서 이재명 대통령 직무 긍정률은 전주보다 3.1%포인트 오른 37.9%(부정률 60.1%, 3.3%p↓)를 기록했습니다. 더불어민주당 38.7%, 국민의힘 39.4%였습니다. 리얼미터는 대국민 기자회견, 유엔총회·한미정상회담 순방 외교, 인사 논란에 대한 인적 쇄신 의지가 긍정적으로 작용했다고 분석했습니다. 같은 기간 한국갤럽은 3주 연속(40→38→37%) 하락해 두 조사기관의 흐름이 엇갈립니다. ([머니투데이](https://www.mt.co.kr/politics/2026/09/28/2026092807591563636), [파이낸셜뉴스](https://www.fnnews.com/news/202609280801438602))\n- **강훈식 비서실장 사의, 인적 쇄신 배경으로 재조명** — 강훈식 대통령비서실장은 지난 21일 김승원 전 법무부 장관 후보자 낙마 등 인사 검증 실패에 책임을 지고 사의를 표명했습니다(용혜인 성평등가족부 장관 후보자도 앞서 낙마). 리얼미터는 이런 인적 쇄신 움직임을 이번 지지율 상승의 배경 중 하나로 꼽았습니다. ([노컷뉴스](https://www.nocutnews.co.kr/news/6581568), [서울신문](https://www.seoul.co.kr/news/politics/2026/09/22/20260922001005))\n- **김여정 \"북미 정상 관계 나쁘지 않다\", 백악관도 소통 의지 화답** — 김여정 노동당 부부장은 담화에서 김정은 위원장과 트럼프 대통령의 개인적 관계가 \"나쁘지 않다\"면서도 비핵화를 전제로 한 대화는 하지 않겠다고 밝혔습니다. 백악관은 트럼프 대통령이 북한 비핵화를 위해 계속 소통할 뜻이 있다고 화답했습니다. ([헤럴드경제](https://biz.heraldcorp.com/article/10541919))\n- **국정감사 상임위별 일정 확정** — 10월 6일부터 27일까지 3주간 진행되는 국정감사의 상임위별 세부 일정이 공개됐습니다(정보위·성평등가족위, 운영위 대통령비서실 감사는 10월 30일까지). ([YTN](https://www.ytn.co.kr/_ln/0101_202608251819207042))\n\n## 🇰🇷 한국 경제\n\n- **코스피 2.70%↓ 6,889.74, 7,000선 붕괴** — 코스피는 미국 10년물 국채금리 급등과 반도체 대형주 급락 여파로 전 거래일 대비 191.18포인트(2.70%) 내린 6,889.74에 마감했습니다. 삼성전자는 5.43%(1만5,500원↓) 내린 27만원, SK하이닉스는 5.05% 내렸습니다. 개인이 3조2,866억원 순매수했지만 외국인·기관이 각각 3조6,010억원, 1조3,330억원을 순매도했습니다. 업종별로는 화학(+3.20%)·건설(+3.05%)이 강세, 반도체 관련주가 약세였습니다. ([이투데이](https://www.etoday.co.kr/news/view/2629968), [한국경제](https://www.hankyung.com/article/2026092898206))\n- **반도체주 급락, AI 밸류에이션 부담·차익실현이 겹쳐** — 삼성전자·SK하이닉스 급락 배경으로는 AI 반도체 투자 지속 가능성에 대한 우려, 최근 급등에 따른 차익실현 매물, 높은 밸류에이션 부담, 중국의 심자외선(DUV) 노광장비 개발 소식 등이 복합적으로 작용했다는 분석이 나옵니다. ([서울신문](https://www.seoul.co.kr/news/economy/securities/2026/09/28/20260928500115))\n- **원/달러 1,365원대로 약세 전환** — 원/달러 환율은 9월 28일 서울 외환시장에서 1,365.10원에 마감해, 지난주 1,355원대에서 다시 올랐습니다(원화 약세). 미 국채금리 급등에 따른 위험회피 심리와 외국인의 증시 순매도가 배경으로 꼽힙니다. ([철강금속신문](https://www.snmnews.com/news/articleView.html?idxno=575208), [SBS Biz](https://biz.sbs.co.kr/article/20000337072))\n\n## 🔭 전망과 과거 사례\n\n확률 옆 괄호는 근거의 종류입니다. **시장 가격**은 돈이 걸린 수치이고, **판단**은 시장 가격이 없어 사실을 바탕으로 추정한 값입니다. 전체 이슈와 전망 기록은 웹페이지의 \"이슈 흐름\"과 \"전망 기록\" 탭에서 볼 수 있습니다.\n\n### 코스피 7,000과 반도체 쏠림\n- **지금 상황**: 코스피는 9월 28일 미국 10년물 국채금리 급등과 반도체 대형주 급락 여파로 2.70% 내린 6,889.74에 마감해 7,000선이 무너졌습니다. 외국인·기관이 동반 순매도했습니다.\n- **전망** (판단): 10월 말 7,000 이상 약 40% · 6,500~7,000 약 45% · 6,500 미만 약 15%\n- **판단을 바꿀 신호**: 미국 10년물 국채금리 방향, 10월 1일 발표되는 9월 수출(반도체), 삼성전자·SK하이닉스 3분기 실적, 외국인·기관 순매수 전환 여부\n- **과거 비슷한 사례 — 반도체 슈퍼사이클 고점(2017~2018)**: 비슷한 점은 삼성전자·SK하이닉스가 주도한 사상 최고치 부근에서 금리 충격으로 되밀렸다는 것입니다. 다른 점은 지금은 AI 수요라는 구조적 요인이 있어 당시 메모리 가격 사이클과 수요의 성격이 다르다는 것입니다. 당시 결과는 2018년 1월 2,598 고점을 찍은 뒤 미·중 무역분쟁과 연준 인상이 겹쳐 그해 약 17% 내렸습니다.\n\n### 이재명 대통령 지지율(갤럽·리얼미터 엇갈림)\n- **지금 상황**: 한국갤럽은 3주 연속(40→38→37%) 하락한 반면, 리얼미터는 2주 연속 상승해 9월 28일 37.9%를 기록했습니다. 강훈식 비서실장 사의 등 인적 쇄신과 유엔·한미 순방 외교가 리얼미터 상승의 배경으로 꼽힙니다.\n- **전망** (판단): 35~40% 박스권 약 50% · 40% 이상 회복 약 30% · 35% 미만 추가 하락 약 20%\n- **판단을 바꿀 신호**: 두 조사기관의 흐름이 다음 주에도 엇갈리는지 여부, 파병 방식과 국회 동의 절차, 후속 인사 검증 결과\n- **과거 비슷한 사례 — 노무현 정부의 이라크 파병(2003~2004)**: 비슷한 점은 미국의 요청으로 파병 논의가 진행되며 여론조사 기관별로 지지율 흐름이 들쭉날쭉했다는 것입니다. 다른 점은 당시는 전후 재건이 명분인 지상군 파병이었고, 지금은 교전 가능성이 있는 해협에 보내는 문제라는 것입니다. 당시 결과는 2004년 2월 자이툰부대 파병 무렵 지지율이 25%까지 떨어졌습니다.\n\n### 호르무즈 해협과 미·이란 협상\n- **지금 상황**: 트럼프 대통령이 이란의 재개방 제안 거부를 재확인했고 중간선거 전 추가 공격 가능성도 배제하지 않았습니다. 반면 페제시키안 이란 대통령은 조건부로 핵 프로그램 제한 논의 용의를 밝혀, 대화 채널 자체는 유지되고 있습니다.\n- **전망** (판단): 10월 중 재개방 합의 약 20% · 협상 지속과 교착 약 50% · 재충돌 약 30%\n- **판단을 바꿀 신호**: 미국의 봉쇄 해제 조건 언급 여부, 호르무즈 통항 선박 수, 미국 중간선거(11월 3일) 이후 군사행동 재개 여부\n- **과거 비슷한 사례 — 이란·이라크 전쟁 말기 '유조선 전쟁'(1987~88)**: 비슷한 점은 이란이 해협 통항을 지렛대로 삼고 미국이 해군력으로 맞섰다는 것입니다. 다른 점은 당시엔 해협 문제가 전쟁에 딸린 문제였던 반면 지금은 미국의 봉쇄와 이란의 해협 통제가 정면으로 맞서 있다는 것입니다. 당시 결과는 1988년 7월 이란이 유엔 결의 598호를 받아들이면서 약 1년 만에 끝났습니다.\n\n## ✅ 지난 전망 점검\n- 마감일이 지났거나 결과가 나온 전망이 아직 없습니다. 가장 빠른 마감은 10월 25일(호르무즈 파병 발표 여부, 코스피 7,300 이상 여부)입니다.\n\n## 📅 다가오는 일정\n\n- 9/29(화) — 한국은행 9월 기업경기조사·경제심리지수 발표\n- 9/30(수) — 국가데이터처 8월 산업활동동향(생산·소비·투자) 발표\n- 10/1(목) — 9월 수출입 동향(반도체 수출) 발표\n- 10/6~27 — 국정감사(상임위별)\n- 10/25 — 청해부대 파병 발표 여부·코스피 7,300 이상 여부 전망 마감\n- 10/28 — 연준 FOMC 결정(10월 인상 여부)\n- 11/3 — 미국 중간선거\n- 11월~ — 국회 예산결산특별위원회 심사 시작(법정시한 12/2)\n- 계속 — 미·이란 호르무즈 협상 및 한국 파병 여부, 러-우 공습, 코스피·반도체 3분기 실적 시즌\n\n---\n*자동 생성: 검색 결과를 바탕으로 한 요약입니다. 전망은 확률 추정일 뿐이며 투자 판단의 근거로 쓰지 마세요.*\n",
    "sources": [
     {
-     "name": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/27/iran-foreign-minister-keeps-indirect-talks-with-us-open-state-media.html",
-     "domain": "cnbc.com",
-     "korean": false,
-     "section": "",
-     "headline": ""
-    },
-    {
-     "name": "Washington Times",
-     "url": "https://www.washingtontimes.com/news/2026/sep/27/iran-says-ready-doomsday-onslaught-us-attacks-trump-rejects-ceasefire/",
-     "domain": "washingtontimes.com",
-     "korean": false,
-     "section": "",
-     "headline": ""
-    },
-    {
-     "name": "Fox News",
-     "url": "https://www.foxnews.com/politics/us-china-strike-deal-lower-tariffs-30b-goods-trump-xi-washington-summit",
-     "domain": "foxnews.com",
-     "korean": false,
+     "name": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2629968",
+     "domain": "etoday.co.kr",
+     "korean": true,
      "section": "",
      "headline": ""
     },
     {
      "name": "한국경제",
-     "url": "https://www.hankyung.com/article/202609266117i",
+     "url": "https://www.hankyung.com/article/2026092898206",
      "domain": "hankyung.com",
      "korean": true,
      "section": "",
      "headline": ""
     },
     {
-     "name": "뉴스톱",
-     "url": "https://www.newstopkorea.com/news/articleView.html?idxno=47402",
-     "domain": "newstopkorea.com",
+     "name": "Fox News",
+     "url": "https://www.foxnews.com/live-news/iran-war-strait-of-hormuz-donald-trump-09-27-26",
+     "domain": "foxnews.com",
+     "korean": false,
+     "section": "",
+     "headline": ""
+    },
+    {
+     "name": "뉴스핌",
+     "url": "https://www.newspim.com/news/view/20260928001100",
+     "domain": "newspim.com",
      "korean": true,
      "section": "",
      "headline": ""
     },
     {
-     "name": "한국농촌경제신문",
-     "url": "https://www.kenews.co.kr/news/article.html?no=89986",
-     "domain": "kenews.co.kr",
+     "name": "머니투데이",
+     "url": "https://www.mt.co.kr/politics/2026/09/28/2026092807591563636",
+     "domain": "mt.co.kr",
      "korean": true,
      "section": "",
      "headline": ""
     },
     {
-     "name": "CNN",
-     "url": "https://www.cnn.com/2026/09/27/uk/fairford-arrests-uk-raf-us-intl",
-     "domain": "cnn.com",
-     "korean": false,
-     "section": "🌍 세계 정치",
-     "headline": "영국 미군기지 인근서 테러 예비 혐의 5명 체포"
+     "name": "파이낸셜뉴스",
+     "url": "https://www.fnnews.com/news/202609280801438602",
+     "domain": "fnnews.com",
+     "korean": true,
+     "section": "",
+     "headline": ""
     },
     {
-     "name": "NBC News",
-     "url": "https://www.nbcnews.com/world/united-kingdom/men-arrested-suspicion-explosives-offences-us-air-base-britain-rcna600052",
-     "domain": "nbcnews.com",
+     "name": "Forbes",
+     "url": "https://www.forbes.com/sites/katyasoldak/2026/09/28/monday-september-28-russias-war-on-ukraine-news-and-information-from-ukraine/",
+     "domain": "forbes.com",
      "korean": false,
      "section": "🌍 세계 정치",
-     "headline": "영국 미군기지 인근서 테러 예비 혐의 5명 체포"
+     "headline": "우크라이나, 러시아 방산시설·유류저장고 타격…미국은 패트리어트 면허생산 승인"
     },
     {
-     "name": "US News",
-     "url": "https://www.usnews.com/news/world/articles/2026-09-27/russian-attacks-kills-three-in-ukrainian-cities-strikes-hit-kyiv-districts-officials-say",
-     "domain": "usnews.com",
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/28/frances-far-right-national-rally-gains-ground-in-senate-vote",
+     "domain": "aljazeera.com",
      "korean": false,
      "section": "🌍 세계 정치",
-     "headline": "러시아·우크라이나, 공습 계속"
+     "headline": "프랑스 극우 국민연합, 상원 첫 원내교섭단체 구성"
     },
     {
-     "name": "Anadolu/AA",
-     "url": "https://www.anews.com.tr/middle-east/2026/09/27/israeli-army-kills-palestinian-wounds-7-others-in-new-gaza-truce-violations",
-     "domain": "anews.com.tr",
+     "name": "France24",
+     "url": "https://www.france24.com/en/france/20260927-france-s-far-right-gains-ground-in-indirect-senate-elections",
+     "domain": "france24.com",
      "korean": false,
      "section": "🌍 세계 정치",
-     "headline": "가자 휴전 위반 계속"
+     "headline": "프랑스 극우 국민연합, 상원 첫 원내교섭단체 구성"
     },
     {
-     "name": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/24/stock-market-today-live-updates.html",
-     "domain": "cnbc.com",
+     "name": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2026-09-27/slovakia-s-fico-warns-of-snap-vote-as-coalition-majority-at-risk",
+     "domain": "bloomberg.com",
      "korean": false,
+     "section": "🌍 세계 정치",
+     "headline": "슬로바키아 피초 총리, 연립 갈등에 내년 1월 조기총선 가능성 시사"
+    },
+    {
+     "name": "머니투데이",
+     "url": "https://www.mt.co.kr/stock/2026/09/28/2026092814221429351",
+     "domain": "mt.co.kr",
+     "korean": true,
      "section": "💹 세계 경제·시장",
      "headline": "시장 지표 표"
     },
     {
      "name": "Yahoo Finance",
-     "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-september-25-dow-sp-500-nasdaq-081738529.html",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-september-28-dow-sp-500-nasdaq-080420627.html",
      "domain": "finance.yahoo.com",
      "korean": false,
      "section": "💹 세계 경제·시장",
-     "headline": "시장 지표 표"
+     "headline": "美 국채금리 2007년 이후 최고치, 뉴욕 증시 개장 전 선물은 하락"
     },
     {
-     "name": "WTOP",
-     "url": "https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-25-2026",
-     "domain": "wtop.com",
+     "name": "Bloomberg",
+     "url": "https://www.bloomberg.com/news/articles/2026-09-28/us-releases-details-on-30-billion-of-goods-with-tariff-cuts",
+     "domain": "bloomberg.com",
      "korean": false,
      "section": "💹 세계 경제·시장",
-     "headline": "시장 지표 표"
+     "headline": "미·중, 관세 인하 품목 목록 공개하고 휴전 내년 1월까지 연장"
     },
     {
-     "name": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/23/market-sees-next-fed-hike-in-october-following-barr-comments-hot-inflation.html",
-     "domain": "cnbc.com",
+     "name": "Axios",
+     "url": "https://www.axios.com/2026/09/26/us-china-tariffs-trade-30-billion",
+     "domain": "axios.com",
      "korean": false,
      "section": "💹 세계 경제·시장",
-     "headline": "연준 10월 인상 확률, 9월 중순 대비 크게 상승"
+     "headline": "미·중, 관세 인하 품목 목록 공개하고 휴전 내년 1월까지 연장"
     },
     {
-     "name": "머니투데이",
-     "url": "https://www.mt.co.kr/politics/2026/08/31/2026083015191690580",
-     "domain": "mt.co.kr",
+     "name": "노컷뉴스",
+     "url": "https://www.nocutnews.co.kr/news/6581568",
+     "domain": "nocutnews.co.kr",
      "korean": true,
      "section": "🇰🇷 한국 정치",
-     "headline": "(정정) 정기국회는 9월 1일 이미 개회, 예산안도 9월 3일 국회 제출 완료"
+     "headline": "강훈식 비서실장 사의, 인적 쇄신 배경으로 재조명"
     },
     {
-     "name": "파이낸셜뉴스",
-     "url": "https://www.fnnews.com/news/202609250700597659",
-     "domain": "fnnews.com",
+     "name": "서울신문",
+     "url": "https://www.seoul.co.kr/news/politics/2026/09/22/20260922001005",
+     "domain": "seoul.co.kr",
      "korean": true,
      "section": "🇰🇷 한국 정치",
-     "headline": "지지율은 빠졌지만 여야 지지율은 '제자리'"
+     "headline": "강훈식 비서실장 사의, 인적 쇄신 배경으로 재조명"
     },
     {
-     "name": "뉴스1",
-     "url": "https://www.news1.kr/diplomacy/defense-diplomacy/6295274",
-     "domain": "news1.kr",
+     "name": "헤럴드경제",
+     "url": "https://biz.heraldcorp.com/article/10541919",
+     "domain": "heraldcorp.com",
      "korean": true,
      "section": "🇰🇷 한국 정치",
-     "headline": "호르무즈 파병 논의 지속"
+     "headline": "김여정 \"북미 정상 관계 나쁘지 않다\", 백악관도 소통 의지 화답"
     },
     {
-     "name": "아주경제",
-     "url": "https://www.ajunews.com/view/20260907112149450",
-     "domain": "ajunews.com",
+     "name": "YTN",
+     "url": "https://www.ytn.co.kr/_ln/0101_202608251819207042",
+     "domain": "ytn.co.kr",
      "korean": true,
      "section": "🇰🇷 한국 정치",
-     "headline": "호르무즈 파병 논의 지속"
+     "headline": "국정감사 상임위별 일정 확정"
     },
     {
-     "name": "베타뉴스",
-     "url": "https://www.betanews.net/article/view/beta202609270001",
-     "domain": "betanews.net",
+     "name": "서울신문",
+     "url": "https://www.seoul.co.kr/news/economy/securities/2026/09/28/20260928500115",
+     "domain": "seoul.co.kr",
      "korean": true,
      "section": "🇰🇷 한국 경제",
-     "headline": "삼성전자·SK하이닉스 3분기 실적 전망 상향"
+     "headline": "반도체주 급락, AI 밸류에이션 부담·차익실현이 겹쳐"
     },
     {
-     "name": "파이낸셜뉴스",
-     "url": "https://www.fnnews.com/news/202609270715141983",
-     "domain": "fnnews.com",
-     "korean": true,
+     "name": "철강금속신문",
+     "url": "https://www.snmnews.com/news/articleView.html?idxno=575208",
+     "domain": "snmnews.com",
+     "korean": false,
      "section": "🇰🇷 한국 경제",
-     "headline": "삼성전자·SK하이닉스 3분기 실적 전망 상향"
+     "headline": "원/달러 1,365원대로 약세 전환"
     },
     {
-     "name": "블록미디어",
-     "url": "https://www.blockmedia.co.kr/archives/1144385",
-     "domain": "blockmedia.co.kr",
+     "name": "SBS Biz",
+     "url": "https://biz.sbs.co.kr/article/20000337072",
+     "domain": "sbs.co.kr",
      "korean": true,
      "section": "🇰🇷 한국 경제",
-     "headline": "원화 강세 지속, 원/달러 1,355원대"
-    },
-    {
-     "name": "머니투데이",
-     "url": "https://www.mt.co.kr/economy/2026/09/22/2026092216312189980",
-     "domain": "mt.co.kr",
-     "korean": true,
-     "section": "🇰🇷 한국 경제",
-     "headline": "원화 강세 지속, 원/달러 1,355원대"
-    },
-    {
-     "name": "파이낸셜뉴스",
-     "url": "https://www.fnnews.com/news/202609221727422518",
-     "domain": "fnnews.com",
-     "korean": true,
-     "section": "🇰🇷 한국 경제",
-     "headline": "9월 소비자심리지수 소폭 반등, 체감경기는 여전히 냉랭"
+     "headline": "원/달러 1,365원대로 약세 전환"
     }
    ]
   },
@@ -400,8 +384,105 @@
    "start": "2026-09-21",
    "end": "2026-09-27",
    "title": "주간 요약 — 2026년 9월 21일 ~ 9월 27일",
-   "markdown": "# 주간 요약 — 2026년 9월 21일 ~ 9월 27일\n\n> 이번 주 핵심 3줄\n> 1. 미·중이 워싱턴 정상회담(9/24~26)에서 무역 휴전을 2개월 연장하고 비민감 품목 300억 달러어치의 상호 관세를 낮추기로 했으나, 세부안은 다음 주 월요일(9/28) 공개로 미뤄졌습니다.\n> 2. 트럼프 대통령이 이란의 '7일 내 호르무즈 재개방' 제안을 26일 거부했고, 이란도 조건을 낮추지 않아 해협은 계속 막혀 있습니다. 같은 기간 CME FedWatch 기준 연준의 10월 추가 인상 확률은 약 50%에서 69~73%로 뛰었습니다.\n> 3. 코스피는 23일 7,080.92로 마감하며 7,000선 위에서 추석 연휴에 들어갔고, 이재명 대통령은 유엔총회·멕시코 순방을 마치고 27일 귀국했습니다. 이 대통령 직무 긍정률(한국갤럽)은 37%로 취임 후 최저치입니다.\n\n## 📈 이번 주 흐름\n\n이번 주부터 이 페이지의 브리핑과 이슈 추적을 시작했습니다. 아래는 이번 주(9/21~27) 동안 각 추적 이슈에서 있었던 주요 변화입니다.\n\n- **호르무즈 해협과 미·이란 협상**: 24일 단계적 재개방 협상설이 보도되며 유가가 장중 고점에서 밀렸지만, 26일 이란이 '7일 내 재개방'을 조건부로 제안하자 트럼프 대통령이 이를 공개적으로 거부했습니다. 이란도 조건을 누그러뜨리지 않겠다고 밝혀 주말 사이 협상은 다시 교착됐습니다. 시나리오 확률은 \"협상 지속·교착\" 50%를 축으로 유지됩니다.\n- **연준의 금리 재인상**: 9월 16일 인상(3.75~4.00%) 이후, 월러·바 등 위원들의 매파적 발언과 물가 지표를 계기로 CME FedWatch 기준 10월 28일 추가 인상 확률이 이번 주 중 약 50%에서 69~73%로 크게 올랐습니다. 시장 가격 기준 시나리오라 매일 바뀔 수 있습니다.\n- **미·중 무역 휴전**: 24~26일 워싱턴에서 열린 시진핑 주석의 국빈방문 정상회담에서 무역 휴전을 11월 10일에서 내년 1월 10일까지 연장하고, AI 사고 대응 채널을 새로 만들기로 했습니다. 다만 구속력 있는 세부 합의는 없었고, 관세 인하 대상 품목과 규모는 다음 주로 넘어갔습니다.\n- **호르무즈 파병 논란과 지지율**: 18일 발표된 한국갤럽 조사에서 이 대통령 긍정률이 37%(3주 연속 하락)로 취임 후 최저치를 기록했습니다. 22일 유엔총회 기간 한·미 정상 약식 회담이 있었고, 27일에는 미국이 해상 초계기·군수지원함·기뢰제거 인력 파병을 요청했다는 보도가 나왔습니다. 이 대통령은 순방에서 이날 귀국했습니다.\n- **코스피와 반도체**: 23일 코스피가 0.90% 오른 7,080.92로 추석 연휴 전 마지막 거래를 마쳤습니다. 9월 1~20일 수출은 714억 달러(+78.3%)로 역대 최대, 반도체 수출은 341억 달러(+259.4%)로 처음 300억 달러를 넘었습니다.\n- **2027년도 예산안**: 정부는 9월 1일 국무회의에서 820조 9,000억원 규모 예산안을 의결해 9월 3일 국회에 제출했습니다(정기국회도 9월 1일 이미 개회). 10월 6~27일 국정감사 이후 11월부터 예산 심사가 본격화됩니다.\n- **북·미 대화**: 23일 이 대통령이 유엔총회 연설에서 북·미 대화 재개를 촉구했으나, 북한은 공개적으로 호응하지 않고 있습니다.\n\n## 🔁 과거와 비교\n\n- **정상회담 뒤 세부 합의는 미뤄지는 무역 협상 패턴 — 2018~19년 부에노스아이레스 90일 휴전**: 비슷한 점은 정상회담에서 시한부 휴전과 실무 협상 합의를 발표했다는 것입니다. 다른 점은 이번엔 AI 채널·무역위원회 같은 상설 창구가 생겼다는 것입니다. 당시 결과는 2019년 2월 한 차례 연장했지만 5월에 결렬돼 관세가 10%에서 25%로 올랐습니다. 같은 패턴(휴전 연장 뒤 세부 이행에서 갈등)이 재연될지가 이번 주 이후의 관전 포인트입니다.\n- **취임 초 지지율 하락과 안보 이슈 — 노무현 정부의 이라크 파병(2003~2004)**: 비슷한 점은 미국의 요청에 따른 파병 논쟁이 지지율에 부담을 준다는 것입니다. 다른 점은 지금은 교전 가능성이 있는 해협에 파병 여부를 검토하는 것이고 대미 투자·통상 압박까지 얽혀 있다는 것입니다. 당시 결과는 파병 무렵 지지율이 25%까지 떨어졌습니다. 현재 37%는 아직 그 수준에는 못 미칩니다.\n\n## ✅ 이번 주 전망 점검\n\n이번 주에 마감을 맞아 채점된 전망은 없습니다. 지난 27일에 처음 기록한 7개 전망 모두 대기 중이며, 가장 빠른 마감은 10월 28일(연준 결정)입니다. 채점이 쌓이면 이 자리에 방향 적중률과 Brier 점수가 표시됩니다.\n\n## 🎯 4주 뒤를 보는 전망\n\n- **한국 정부가 10월 25일까지 호르무즈 해협에 군 자산(청해부대 임무·구역 확대 포함)을 파견한다고 공식 발표할까**: 약 30% (판단). 이재명 대통령은 \"전쟁에 직접 관여하는 파병은 없다\"는 원칙을 재확인했지만 청해부대 역할 확대는 검토 중이고, 미국의 압박과 NSC 논의가 이어지고 있어 4주 안에 결론이 날 가능성을 낮게 봅니다.\n- **코스피가 10월 25일까지 종가 기준 7,300을 한 번이라도 넘을까**: 약 30% (판단). 현재 7,080.92에서 3% 넘게 올라야 하는데, 반도체 3분기 실적 기대가 개선됐지만 연준 결정(10/28)과 미·중 관세 세부안이 변수입니다.\n\n## 📅 다음 주 주목 일정\n\n- 9/28(월) — 국내 증시 거래 재개, 미·중 무역합의 세부 관세·품목 공개\n- 9/29(화) — 한국은행 9월 기업경기조사·경제심리지수 발표\n- 9/30(수) — 국가데이터처 8월 산업활동동향 발표\n- 10/6~27 — 국정감사\n\n---\n*자동 생성: 검색 결과와 브리핑·이슈 기록을 바탕으로 한 요약입니다. 전망은 확률 추정일 뿐이며 투자 판단의 근거로 쓰지 마세요.*\n",
-   "sources": []
+   "markdown": "# 주간 요약 — 2026년 9월 21일 ~ 9월 27일\n\n> 이번 주 핵심 3줄\n> 1. 미·중이 워싱턴 정상회담(9/24~26)에서 무역 휴전을 2개월 연장하고 비민감 품목 300억 달러어치의 상호 관세를 낮추기로 했으나, 세부안은 다음 주 월요일(9/28) 공개로 미뤄졌습니다.\n> 2. 트럼프 대통령이 이란의 '7일 내 호르무즈 재개방' 제안을 26일 거부했고, 이란도 조건을 낮추지 않아 해협은 계속 막혀 있습니다. 같은 기간 CME FedWatch 기준 연준의 10월 추가 인상 확률은 약 50%에서 69~73%로 뛰었습니다.\n> 3. 코스피는 23일 7,080.92로 마감하며 7,000선 위에서 추석 연휴에 들어갔고, 이재명 대통령은 유엔총회·멕시코 순방을 마치고 27일 귀국했습니다. 이 대통령 직무 긍정률(한국갤럽)은 37%로 취임 후 최저치입니다.\n\n## 📈 이번 주 흐름\n\n이번 주부터 이 페이지의 브리핑과 이슈 추적을 시작했습니다. 아래는 이번 주(9/21~27) 동안 각 추적 이슈에서 있었던 주요 변화입니다.\n\n- **호르무즈 해협과 미·이란 협상**: 24일 단계적 재개방 협상설이 보도되며 유가가 장중 고점에서 밀렸지만, 26일 이란이 '7일 내 재개방'을 조건부로 제안하자 트럼프 대통령이 이를 공개적으로 거부했습니다. 이란도 조건을 누그러뜨리지 않겠다고 밝혀 주말 사이 협상은 다시 교착됐습니다. 시나리오 확률은 \"협상 지속·교착\" 50%를 축으로 유지됩니다. ([CNN](https://www.cnn.com/2026/09/26/middleeast/trump-rejects-iran-proposal-hormuz-intl), [OilPrice](https://oilprice.com/Latest-Energy-News/World-News/Oil-Tumbles-3-as-Iran-Floats-Hormuz-Reopening-Within-a-Week.html))\n- **연준의 금리 재인상**: 9월 16일 인상(3.75~4.00%) 이후, 월러·바 등 위원들의 매파적 발언과 물가 지표를 계기로 CME FedWatch 기준 10월 28일 추가 인상 확률이 이번 주 중 약 50%에서 69~73%로 크게 올랐습니다. 시장 가격 기준 시나리오라 매일 바뀔 수 있습니다. ([CNBC](https://www.cnbc.com/2026/09/23/market-sees-next-fed-hike-in-october-following-barr-comments-hot-inflation.html))\n- **미·중 무역 휴전**: 24~26일 워싱턴에서 열린 시진핑 주석의 국빈방문 정상회담에서 무역 휴전을 11월 10일에서 내년 1월 10일까지 연장하고, AI 사고 대응 채널을 새로 만들기로 했습니다. 다만 구속력 있는 세부 합의는 없었고, 관세 인하 대상 품목과 규모는 다음 주로 넘어갔습니다. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says), [SCMP](https://www.scmp.com/economy/global-economy/article/3368908/trade-truce-extension-aside-was-ai-real-xi-trump-summit-breakthrough))\n- **호르무즈 파병 논란과 지지율**: 18일 발표된 한국갤럽 조사에서 이 대통령 긍정률이 37%(3주 연속 하락)로 취임 후 최저치를 기록했습니다. 22일 유엔총회 기간 한·미 정상 약식 회담이 있었고, 27일에는 미국이 해상 초계기·군수지원함·기뢰제거 인력 파병을 요청했다는 보도가 나왔습니다. 이 대통령은 순방에서 이날 귀국했습니다. ([경향신문](https://www.khan.co.kr/en/article/202609182106007/), [뉴스1](https://www.news1.kr/diplomacy/defense-diplomacy/6295274))\n- **코스피와 반도체**: 23일 코스피가 0.90% 오른 7,080.92로 추석 연휴 전 마지막 거래를 마쳤습니다. 9월 1~20일 수출은 714억 달러(+78.3%)로 역대 최대, 반도체 수출은 341억 달러(+259.4%)로 처음 300억 달러를 넘었습니다. ([KORI Insight](https://koriinsight.com/september-2026-week-5-economic-news-en/), [베타뉴스](https://www.betanews.net/article/view/beta202609270001))\n- **2027년도 예산안**: 정부는 9월 1일 국무회의에서 820조 9,000억원 규모 예산안을 의결해 9월 3일 국회에 제출했습니다(정기국회도 9월 1일 이미 개회). 10월 6~27일 국정감사 이후 11월부터 예산 심사가 본격화됩니다. ([뉴스톱](https://www.newstopkorea.com/news/articleView.html?idxno=47402))\n- **북·미 대화**: 23일 이 대통령이 유엔총회 연설에서 북·미 대화 재개를 촉구했으나, 북한은 공개적으로 호응하지 않고 있습니다. ([Korea JoongAng Daily](https://www.koreajoongangdaily.com/korea/lee-says-trump-created-opportunity-for-change-calls-for-speedy-resumption-of-north-koreaus-talks-at-un/12888745))\n\n## 🔁 과거와 비교\n\n- **정상회담 뒤 세부 합의는 미뤄지는 무역 협상 패턴 — 2018~19년 부에노스아이레스 90일 휴전**: 비슷한 점은 정상회담에서 시한부 휴전과 실무 협상 합의를 발표했다는 것입니다. 다른 점은 이번엔 AI 채널·무역위원회 같은 상설 창구가 생겼다는 것입니다. 당시 결과는 2019년 2월 한 차례 연장했지만 5월에 결렬돼 관세가 10%에서 25%로 올랐습니다. 같은 패턴(휴전 연장 뒤 세부 이행에서 갈등)이 재연될지가 이번 주 이후의 관전 포인트입니다.\n- **취임 초 지지율 하락과 안보 이슈 — 노무현 정부의 이라크 파병(2003~2004)**: 비슷한 점은 미국의 요청에 따른 파병 논쟁이 지지율에 부담을 준다는 것입니다. 다른 점은 지금은 교전 가능성이 있는 해협에 파병 여부를 검토하는 것이고 대미 투자·통상 압박까지 얽혀 있다는 것입니다. 당시 결과는 파병 무렵 지지율이 25%까지 떨어졌습니다. 현재 37%는 아직 그 수준에는 못 미칩니다.\n\n## ✅ 이번 주 전망 점검\n\n이번 주에 마감을 맞아 채점된 전망은 없습니다. 지난 27일에 처음 기록한 7개 전망 모두 대기 중이며, 가장 빠른 마감은 10월 28일(연준 결정)입니다. 채점이 쌓이면 이 자리에 방향 적중률과 Brier 점수가 표시됩니다.\n\n## 🎯 4주 뒤를 보는 전망\n\n- **한국 정부가 10월 25일까지 호르무즈 해협에 군 자산(청해부대 임무·구역 확대 포함)을 파견한다고 공식 발표할까**: 약 30% (판단). 이재명 대통령은 \"전쟁에 직접 관여하는 파병은 없다\"는 원칙을 재확인했지만 청해부대 역할 확대는 검토 중이고, 미국의 압박과 NSC 논의가 이어지고 있어 4주 안에 결론이 날 가능성을 낮게 봅니다. ([뉴스1](https://www.news1.kr/diplomacy/defense-diplomacy/6295274), [MBC](https://imnews.imbc.com/replay/2026/nw1200/article/6849616_36967.html))\n- **코스피가 10월 25일까지 종가 기준 7,300을 한 번이라도 넘을까**: 약 30% (판단). 현재 7,080.92에서 3% 넘게 올라야 하는데, 반도체 3분기 실적 기대가 개선됐지만 연준 결정(10/28)과 미·중 관세 세부안이 변수입니다. ([베타뉴스](https://www.betanews.net/article/view/beta202609270001))\n\n## 📅 다음 주 주목 일정\n\n- 9/28(월) — 국내 증시 거래 재개, 미·중 무역합의 세부 관세·품목 공개\n- 9/29(화) — 한국은행 9월 기업경기조사·경제심리지수 발표\n- 9/30(수) — 국가데이터처 8월 산업활동동향 발표\n- 10/6~27 — 국정감사\n\n---\n*자동 생성: 검색 결과와 브리핑·이슈 기록을 바탕으로 한 요약입니다. 전망은 확률 추정일 뿐이며 투자 판단의 근거로 쓰지 마세요.*\n",
+   "sources": [
+    {
+     "name": "CNN",
+     "url": "https://www.cnn.com/2026/09/26/middleeast/trump-rejects-iran-proposal-hormuz-intl",
+     "domain": "cnn.com",
+     "korean": false,
+     "section": "📈 이번 주 흐름",
+     "headline": "호르무즈 해협과 미·이란 협상"
+    },
+    {
+     "name": "OilPrice",
+     "url": "https://oilprice.com/Latest-Energy-News/World-News/Oil-Tumbles-3-as-Iran-Floats-Hormuz-Reopening-Within-a-Week.html",
+     "domain": "oilprice.com",
+     "korean": false,
+     "section": "📈 이번 주 흐름",
+     "headline": "호르무즈 해협과 미·이란 협상"
+    },
+    {
+     "name": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/23/market-sees-next-fed-hike-in-october-following-barr-comments-hot-inflation.html",
+     "domain": "cnbc.com",
+     "korean": false,
+     "section": "📈 이번 주 흐름",
+     "headline": "연준의 금리 재인상"
+    },
+    {
+     "name": "Al Jazeera",
+     "url": "https://www.aljazeera.com/news/2026/9/26/china-us-to-open-ai-communication-channel-after-summit-white-house-says",
+     "domain": "aljazeera.com",
+     "korean": false,
+     "section": "📈 이번 주 흐름",
+     "headline": "미·중 무역 휴전"
+    },
+    {
+     "name": "SCMP",
+     "url": "https://www.scmp.com/economy/global-economy/article/3368908/trade-truce-extension-aside-was-ai-real-xi-trump-summit-breakthrough",
+     "domain": "scmp.com",
+     "korean": false,
+     "section": "📈 이번 주 흐름",
+     "headline": "미·중 무역 휴전"
+    },
+    {
+     "name": "경향신문",
+     "url": "https://www.khan.co.kr/en/article/202609182106007/",
+     "domain": "khan.co.kr",
+     "korean": true,
+     "section": "📈 이번 주 흐름",
+     "headline": "호르무즈 파병 논란과 지지율"
+    },
+    {
+     "name": "뉴스1",
+     "url": "https://www.news1.kr/diplomacy/defense-diplomacy/6295274",
+     "domain": "news1.kr",
+     "korean": true,
+     "section": "📈 이번 주 흐름",
+     "headline": "호르무즈 파병 논란과 지지율"
+    },
+    {
+     "name": "KORI Insight",
+     "url": "https://koriinsight.com/september-2026-week-5-economic-news-en/",
+     "domain": "koriinsight.com",
+     "korean": true,
+     "section": "📈 이번 주 흐름",
+     "headline": "코스피와 반도체"
+    },
+    {
+     "name": "베타뉴스",
+     "url": "https://www.betanews.net/article/view/beta202609270001",
+     "domain": "betanews.net",
+     "korean": true,
+     "section": "📈 이번 주 흐름",
+     "headline": "코스피와 반도체"
+    },
+    {
+     "name": "뉴스톱",
+     "url": "https://www.newstopkorea.com/news/articleView.html?idxno=47402",
+     "domain": "newstopkorea.com",
+     "korean": true,
+     "section": "📈 이번 주 흐름",
+     "headline": "2027년도 예산안"
+    },
+    {
+     "name": "Korea JoongAng Daily",
+     "url": "https://www.koreajoongangdaily.com/korea/lee-says-trump-created-opportunity-for-change-calls-for-speedy-resumption-of-north-koreaus-talks-at-un/12888745",
+     "domain": "koreajoongangdaily.com",
+     "korean": true,
+     "section": "📈 이번 주 흐름",
+     "headline": "북·미 대화"
+    },
+    {
+     "name": "MBC",
+     "url": "https://imnews.imbc.com/replay/2026/nw1200/article/6849616_36967.html",
+     "domain": "imnews.imbc.com",
+     "korean": true,
+     "section": "🎯 4주 뒤를 보는 전망",
+     "headline": "한국 정부가 10월 25일까지 호르무즈 해협에 군 자산(청해부대 임무·구역 확대 포함)을 파견한다고 공식 발표할까"
+    }
+   ]
   }
  ],
  "issues": [
@@ -411,8 +492,22 @@
    "area": "세계 정치",
    "status": "진행 중",
    "updated": "2026-09-28",
-   "summary": "미국은 이란을 해상 봉쇄하고 있고, 이란은 호르무즈 해협 통항을 막고 있습니다. 이란의 '7일 내 재개방' 조건부 제안을 트럼프 대통령이 공개적으로 거부했고, 이란 외무장관은 새 공격이 오면 '둠스데이 전쟁'까지 각오한다면서도 외교 문은 열어뒀습니다. 트럼프 대통령은 참모들에게 중간선거(11월 3일) 이후 재공습이 유력하다고 말한 것으로 보도됐습니다. 해협 통과 선박은 하루 1척 수준으로 사실상 막혀 있습니다.",
+   "summary": "미국은 이란을 해상 봉쇄하고 있고, 이란은 호르무즈 해협 통항을 막고 있습니다. 트럼프 대통령은 이란의 '7일 내 재개방' 제안을 거부했다고 재확인했고, 페제시키안 이란 대통령은 미국이 정권교체 의도가 없음을 먼저 보이면 핵 프로그램 제한 논의에 응할 용의가 있다고 밝혔습니다. 트럼프 대통령은 중간선거(11월 3일) 이전 추가 군사 공격 가능성도 배제하지 않았습니다. 이 여파로 브렌트유는 4% 급등해 108달러대로 올랐습니다.",
    "timeline": [
+    {
+     "date": "2026-09-28",
+     "text": "트럼프 대통령이 이란의 호르무즈 재개방 제안 거부를 재확인했고, 페제시키안 이란 대통령은 미국이 '정권교체를 원하지 않는다'는 점을 먼저 보여주면 핵 프로그램 제한을 논의할 용의가 있다고 밝혔습니다. 브렌트유(11월물)는 이 여파로 4% 급등해 배럴당 108.59달러를 기록했습니다.",
+     "sources": [
+      {
+       "name": "Fox News",
+       "url": "https://www.foxnews.com/live-news/iran-war-strait-of-hormuz-donald-trump-09-27-26"
+      },
+      {
+       "name": "뉴스핌",
+       "url": "https://www.newspim.com/news/view/20260928001100"
+      }
+     ]
+    },
     {
      "date": "2026-09-27",
      "text": "이란 외무장관 아락치가 'Meet the Press'에 출연해 새로운 공격이 오면 '둠스데이(파국적) 전쟁'까지 각오하고 있다면서도 외교는 결코 실패하지 않는다며 대화 가능성을 열어뒀습니다. 트럼프 대통령은 참모들에게 중간선거(11월 3일) 이후 이란에 대한 재공습이 유력하다고 말한 것으로 보도됐습니다(WSJ 인용).",
@@ -533,9 +628,23 @@
    "title": "연준의 금리 재인상",
    "area": "세계 경제",
    "status": "진행 중",
-   "updated": "2026-09-27",
+   "updated": "2026-09-28",
    "summary": "연준이 9월 16일 3년여 만에 처음으로 금리를 올려 기준금리가 3.75~4.00%가 됐습니다. 고유가와 탄탄한 고용 때문에 물가가 쉽게 내려오지 않는 것이 배경입니다. 점도표상으로는 연내 한 번 더 인상할 가능성이 큽니다.",
    "timeline": [
+    {
+     "date": "2026-09-28",
+     "text": "CME FedWatch 기준 10월 28일 인상 확률이 9월 23일 69~73%에서 9월 28일 72.3%로 소폭 올랐습니다. 같은 날 미국 10년물 국채금리는 장중 5.2%대까지 올라 2007년 이후 최고 수준을 기록했습니다.",
+     "sources": [
+      {
+       "name": "growbeansprout(FedWatch)",
+       "url": "https://growbeansprout.com/tools/fedwatch"
+      },
+      {
+       "name": "이투데이",
+       "url": "https://www.etoday.co.kr/news/view/2629968"
+      }
+     ]
+    },
     {
      "date": "2026-09-27",
      "text": "CME FedWatch 기준 10월 28일 인상 확률이 9월 중순 약 50%에서 9월 23~25일 약 69~73%로 올랐습니다. 월러·바 등 연준 인사의 매파적 발언과 물가 지표가 배경으로 꼽힙니다."
@@ -546,21 +655,21 @@
     }
    ],
    "outlook": {
-    "text": "아래 시나리오 확률은 CME FedWatch의 시장 가격입니다. 9월 중순 10월 인상 확률은 약 50%였으나 9월 23~25일 기준 69~73%로 올랐습니다. 판단이 아니라 시장에 반영된 기대이며, 매일 바뀔 수 있습니다.",
+    "text": "아래 시나리오 확률은 CME FedWatch의 시장 가격입니다. 10월 인상 확률은 9월 23일 69~73%에서 9월 28일 72.3%로 올랐고, 같은 날 미 10년물 금리도 장중 5.2%대(2007년 이후 최고)까지 상승했습니다. 판단이 아니라 시장에 반영된 기대이며, 매일 바뀔 수 있습니다.",
     "scenarios": [
      {
       "name": "10월 28일 추가 인상",
-      "probability": 70,
+      "probability": 72,
       "text": "고용과 물가가 강하게 나오는 경우입니다. 달러 강세로 원화에 부담이 됩니다."
      },
      {
       "name": "12월로 미룸",
-      "probability": 22,
+      "probability": 21,
       "text": "10월에는 동결하고 12월에 인상하는 경우입니다."
      },
      {
       "name": "연내 동결",
-      "probability": 8,
+      "probability": 7,
       "text": "유가가 급락하거나 경기가 둔화하면 멈출 수 있습니다."
      }
     ],
@@ -595,6 +704,14 @@
       "12월로 미룸": 22,
       "연내 동결": 8
      }
+    },
+    {
+     "date": "2026-09-28",
+     "scenarios": {
+      "10월 28일 추가 인상": 72,
+      "12월로 미룸": 21,
+      "연내 동결": 7
+     }
     }
    ]
   },
@@ -604,8 +721,22 @@
    "area": "세계 경제",
    "status": "진행 중",
    "updated": "2026-09-28",
-   "summary": "워싱턴 정상회담(3일간)에서 무역 휴전을 2개월 연장하고 AI 사고 대응 채널을 만들기로 했습니다. 중국은 2027~28년 미국산 석탄을 최소 1,000만 톤씩 수입하기로 약속했습니다. 그리어 USTR 대표는 펜타닐 관세를 20%→10%로 낮춰 대중 관세 전체가 41%→31%로 내려간다고 예고했고, 세부안은 28일 공개됩니다. 구속력 있는 큰 합의는 없었습니다.",
+   "summary": "워싱턴 정상회담에서 합의한 무역 휴전이 내년 1월까지 연장됐습니다. 9월 28일 양국이 상호 관세 인하 대상 품목 목록(미국 77개, 중국 1,619개)을 공개했고, 펜타닐 관세를 20%→10%로 낮춰 대중 관세 전체는 41%→31%로 내려갑니다. 중국은 2027~28년 미국산 석탄을 매년 최소 1,000만 톤 수입하기로 했습니다. 반도체 수출통제는 이번 논의에서 빠졌습니다.",
    "timeline": [
+    {
+     "date": "2026-09-28",
+     "text": "미국과 중국이 상호 관세 인하 대상 품목 목록을 공개했습니다. 미국은 소형 가전·완구·연말연시 장식품·유아용 카시트 등 77개 품목, 중국은 농산물·수산물·목재·화장품·의료기기 등 1,619개 품목의 관세를 낮춥니다. 무역 휴전은 내년 1월까지 연장됐고, 중국은 2027~28년 미국산 석탄을 매년 최소 1,000만 톤 수입하기로 했습니다.",
+     "sources": [
+      {
+       "name": "Bloomberg",
+       "url": "https://www.bloomberg.com/news/articles/2026-09-28/us-releases-details-on-30-billion-of-goods-with-tariff-cuts"
+      },
+      {
+       "name": "Axios",
+       "url": "https://www.axios.com/2026/09/26/us-china-tariffs-trade-30-billion"
+      }
+     ]
+    },
     {
      "date": "2026-09-27",
      "text": "그리어 USTR 대표는 세부 발표를 앞두고 펜타닐 관련 관세를 20%에서 10%로 낮춰 중국산 제품 전체 관세율을 41%에서 31%로 내리는 방향이라고 예고했습니다. 중국은 대두 등 미국산 농산물 추가 구매와 반도체 제조용 희토류 공급을 약속했고, 반도체 수출통제는 이번 논의에서 다루지 않았습니다.",
@@ -634,16 +765,16 @@
     }
    ],
    "outlook": {
-    "text": "무역위원회 같은 실무 채널이 새로 생겼고, 양측 모두 확전 비용을 의식하고 있어 휴전을 다시 연장할 가능성이 가장 크다고 봅니다. 다만 2018~19년에는 휴전을 한 번 연장한 뒤 결렬된 선례가 있습니다. 이 수치는 판단에 근거한 추정입니다.",
+    "text": "세부 관세 품목 목록이 예고대로 공개되고 휴전이 내년 1월까지 연장되면서, 재연장·부분 합의 경로의 비중을 65%→70%로 다시 높였습니다. 다만 2018~19년에는 휴전을 한 차례 연장한 뒤 결렬된 선례가 있어 상한을 두고 있습니다. 이 수치는 판단에 근거한 추정입니다.",
     "scenarios": [
      {
       "name": "재연장·부분 합의",
-      "probability": 65,
-      "text": "현재 관세 수준을 유지하면서 품목별로 조금씩 합의해 나가는 경우입니다. 펜타닐 관세 인하 등 세부안이 예정대로 나오면서 이 경로의 무게를 60%→65%로 조금 높였습니다."
+      "probability": 70,
+      "text": "세부안대로 관세를 순차적으로 낮추며 실무 채널을 이어가는 경우입니다."
      },
      {
       "name": "만료 후 관세 인상",
-      "probability": 20,
+      "probability": 15,
       "text": "협상이 결렬돼 관세가 다시 오르는 경우입니다."
      },
      {
@@ -688,8 +819,8 @@
     {
      "date": "2026-09-28",
      "scenarios": {
-      "재연장·부분 합의": 65,
-      "만료 후 관세 인상": 20,
+      "재연장·부분 합의": 70,
+      "만료 후 관세 인상": 15,
       "포괄 합의": 15
      }
     }
@@ -701,8 +832,36 @@
    "area": "한국 정치",
    "status": "진행 중",
    "updated": "2026-09-28",
-   "summary": "트럼프 행정부는 한국이 호르무즈 해협 재개방에 협조하지 않고 3,500억 달러 대미 투자 이행도 더디다고 압박하고 있습니다. 파병을 둘러싼 논쟁 속에 이 대통령 직무 긍정률(한국갤럽)은 37%로 취임 후 가장 낮고, 부정률은 56%로 가장 높습니다. 다만 같은 기간 민주당·국민의힘 지지율은 큰 변화가 없어, 대통령 지지율 하락이 야당 반사이익으로 이어지지 않는 모습입니다. 정부가 2020년처럼 청해부대 작전구역을 넓히는 방안을 검토한다는 보도가 나왔습니다.",
+   "summary": "트럼프 행정부의 파병 압박이 이어지는 가운데, 대통령 지지율은 조사기관별로 엇갈립니다. 한국갤럽은 3주 연속 하락(40→38→37%)한 반면, 리얼미터는 2주 연속 상승해 9월 28일 37.9%를 기록했습니다(김승원 후보자 낙마에 따른 강훈식 비서실장 사의 등 인적 쇄신과 유엔·한미 순방 외교가 배경으로 꼽힘). 민주당·국민의힘 지지율은 두 조사 모두에서 큰 변화가 없습니다. 정부는 청해부대 작전구역을 넓히는 방안을 검토하되 '전쟁에 직접 관여하는 파병은 없다'는 원칙을 유지하고 있습니다.",
    "timeline": [
+    {
+     "date": "2026-09-28",
+     "text": "리얼미터 조사에서 이재명 대통령 직무 긍정률이 전주보다 3.1%포인트 오른 37.9%로 2주 연속 상승했습니다(부정률 60.1%, 3.3%p 하락). 더불어민주당 38.7%, 국민의힘 39.4%였습니다. 리얼미터 측은 대국민 기자회견, 유엔총회·한미정상회담 순방 외교, 인사 논란에 대한 인적 쇄신 의지가 긍정적으로 작용했다고 분석했습니다. 같은 기간 한국갤럽 조사는 3주 연속 하락(40→38→37%)해 두 조사기관의 흐름이 엇갈립니다.",
+     "sources": [
+      {
+       "name": "머니투데이",
+       "url": "https://www.mt.co.kr/politics/2026/09/28/2026092807591563636"
+      },
+      {
+       "name": "파이낸셜뉴스",
+       "url": "https://www.fnnews.com/news/202609280801438602"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-21",
+     "text": "강훈식 대통령비서실장이 김승원 전 법무부 장관 후보자 낙마 등 인사 검증 실패에 책임을 지고 사의를 표명했습니다. 용혜인 성평등가족부 장관 후보자도 앞서 낙마했습니다.",
+     "sources": [
+      {
+       "name": "노컷뉴스",
+       "url": "https://www.nocutnews.co.kr/news/6581568"
+      },
+      {
+       "name": "서울신문",
+       "url": "https://www.seoul.co.kr/news/politics/2026/09/22/20260922001005"
+      }
+     ]
+    },
     {
      "date": "2026-09-27",
      "text": "미국이 해상 초계기, 군수지원함, 기뢰 제거 인력 형태의 파병을 요청했고, 이란은 파병하면 '침략자 직접 지원'으로 간주하겠다고 경고했습니다. 이 대통령은 이날 순방에서 귀국했습니다."
@@ -735,28 +894,28 @@
     }
    ],
    "outlook": {
-    "text": "한국갤럽 긍정률은 40%, 38%, 37%로 3주 연속 내렸습니다. 추석 연휴와 유엔 외교는 보통 지지율에 미치는 영향이 제한적이어서 당분간 30%대 후반에 머물 가능성이 가장 크다고 봅니다. 파병 결정의 방향과 방식이 가장 큰 변수입니다. 이 수치는 판단에 근거한 추정입니다.",
+    "text": "갤럽과 리얼미터의 흐름이 엇갈리고 있어 불확실성이 커졌습니다. 리얼미터 기준 2주 연속 상승과 인적 쇄신 조치를 반영해 40% 이상 회복 시나리오 비중을 20%→30%로 높였습니다. 다만 갤럽은 여전히 하락세여서 박스권 시나리오를 가장 비중 있게 봅니다. 이 수치는 판단에 근거한 추정입니다.",
     "scenarios": [
      {
       "name": "35~40% 박스권",
-      "probability": 55,
-      "text": "파병 결정을 미루거나 절충안을 택하는 경우입니다."
+      "probability": 50,
+      "text": "두 조사기관의 흐름이 엇갈리며 큰 방향성 없이 오가는 경우입니다."
      },
      {
       "name": "40% 이상 회복",
-      "probability": 20,
-      "text": "호르무즈 해법이 나오거나 통상 압박이 줄어드는 경우입니다."
+      "probability": 30,
+      "text": "인적 쇄신과 외교 성과가 이어지며 두 조사 모두 반등하는 경우입니다."
      },
      {
       "name": "35% 미만 추가 하락",
-      "probability": 25,
-      "text": "파병 결정으로 지지층이 이탈하거나 인사 논란이 커지는 경우입니다."
+      "probability": 20,
+      "text": "파병 결정으로 지지층이 이탈하거나 새 인사 논란이 불거지는 경우입니다."
      }
     ],
     "signals": [
      "파병 방식(독자 작전인지 연합체 참여인지)과 국회 동의 절차",
-     "한국갤럽 주간 조사",
-     "민주당 내부 반대 목소리",
+     "한국갤럽·리얼미터 주간 조사의 방향 일치 여부",
+     "후속 인사(비서실장 등) 검증 결과",
      "트럼프 대통령의 대한국 발언과 관세 조치"
     ],
     "analogues": [
@@ -784,6 +943,14 @@
       "40% 이상 회복": 20,
       "35% 미만 추가 하락": 25
      }
+    },
+    {
+     "date": "2026-09-28",
+     "scenarios": {
+      "35~40% 박스권": 50,
+      "40% 이상 회복": 30,
+      "35% 미만 추가 하락": 20
+     }
     }
    ]
   },
@@ -792,25 +959,35 @@
    "title": "북·미 대화 재개 추진",
    "area": "한국 정치",
    "status": "진행 중",
-   "updated": "2026-09-27",
-   "summary": "이 대통령은 유엔총회에서 북·미 대화를 빨리 재개하자고 촉구했습니다. 핵 개발 동결의 대가로 제재를 완화하는 방안도 언급했습니다. 트럼프 대통령과는 한국이 '페이스메이커' 역할을 하며 긴밀히 소통하기로 했습니다. 북한 매체는 이 대통령을 '위선자'라고 비난했습니다.",
+   "updated": "2026-09-28",
+   "summary": "이 대통령은 유엔총회에서 북·미 대화를 빨리 재개하자고 촉구했습니다. 김여정 부부장은 북·미 정상 간 개인적 관계가 '나쁘지 않다'고 밝혔고 백악관도 소통 의지를 확인했지만, 북한은 비핵화를 전제로 한 대화는 거부하고 있습니다. 북한 매체는 이 대통령을 '위선자'라고 비난했습니다.",
    "timeline": [
+    {
+     "date": "2026-09-28",
+     "text": "김여정 노동당 부부장이 담화에서 '북미 두 정상 간 개인적 관계는 나쁘지 않다'면서도 비핵화를 전제로 한 대화는 하지 않겠다고 밝혔습니다. 백악관은 트럼프 대통령이 북한 비핵화를 위해 김정은 위원장과 계속 소통할 뜻이 있다고 화답했습니다.",
+     "sources": [
+      {
+       "name": "헤럴드경제",
+       "url": "https://biz.heraldcorp.com/article/10541919"
+      }
+     ]
+    },
     {
      "date": "2026-09-23",
      "text": "이 대통령이 유엔총회 연설에서 북·미 대화 재개를 촉구했습니다."
     }
    ],
    "outlook": {
-    "text": "한·미는 적극적이지만 북한은 공개적으로 호응하지 않고 있습니다. 2018년과 달리 북한이 먼저 보낸 신호가 없어 교착이 이어질 가능성이 가장 크다고 봅니다. 이 수치는 판단에 근거한 추정입니다.",
+    "text": "김여정 담화와 백악관의 화답으로 실무 접촉 가능성이 소폭 커졌다고 봐서 25%→32%로 높였지만, 북한이 비핵화 논의 자체를 거부하고 있어 교착이 이어질 가능성을 여전히 가장 크게 봅니다. 이 수치는 판단에 근거한 추정입니다.",
     "scenarios": [
      {
       "name": "교착 유지",
-      "probability": 65,
+      "probability": 58,
       "text": "제안만 오가고 공식 접촉은 없는 경우입니다."
      },
      {
       "name": "실무 접촉 개시",
-      "probability": 25,
+      "probability": 32,
       "text": "판문점이나 제3국에서 접촉이 확인되는 경우입니다."
      },
      {
@@ -843,6 +1020,14 @@
       "실무 접촉 개시": 25,
       "정상회담 합의": 10
      }
+    },
+    {
+     "date": "2026-09-28",
+     "scenarios": {
+      "교착 유지": 58,
+      "실무 접촉 개시": 32,
+      "정상회담 합의": 10
+     }
     }
    ]
   },
@@ -852,8 +1037,32 @@
    "area": "한국 경제",
    "status": "진행 중",
    "updated": "2026-09-28",
-   "summary": "코스피는 삼성전자와 SK하이닉스를 중심으로 7,000선 위에 올라서 있습니다(9월 23일 종가 7,080.92). 반도체 수출은 사상 최대 수준이고 3분기 영업이익 전망치도 3개월 전보다 높아졌습니다. 반면 연준 인상, 고유가, 미국 통상 압박은 부담입니다. 추석 연휴 뒤 오늘(9월 28일) 거래를 다시 시작합니다.",
+   "summary": "코스피는 9월 23일 종가 7,080.92로 7,000선 위에 있었지만, 추석 연휴 뒤 거래를 재개한 9월 28일 미국 10년물 국채금리 급등(장중 5.2%대)과 삼성전자·SK하이닉스 5%대 급락 여파로 2.70% 내린 6,889.74에 마감해 7,000선이 무너졌습니다. AI 반도체 밸류에이션 부담과 차익실현 매물이 낙폭을 키웠다는 분석입니다.",
    "timeline": [
+    {
+     "date": "2026-09-28",
+     "text": "코스피가 미국 10년물 국채금리 급등(장중 5.2%대, 2007년 이후 최고 수준)과 반도체 대형주 급락 여파로 전 거래일보다 191.18포인트(2.70%) 내린 6,889.74에 마감해 7,000선이 무너졌습니다. 삼성전자는 5.43%, SK하이닉스는 5.05% 내렸고 외국인·기관이 각각 3조6,010억원, 1조3,330억원을 순매도했습니다.",
+     "sources": [
+      {
+       "name": "이투데이",
+       "url": "https://www.etoday.co.kr/news/view/2629968"
+      },
+      {
+       "name": "한국경제",
+       "url": "https://www.hankyung.com/article/2026092898206"
+      }
+     ]
+    },
+    {
+     "date": "2026-09-28",
+     "text": "반도체주 급락 배경으로는 AI 반도체 투자 지속 가능성에 대한 우려, 최근 급등에 따른 차익실현 매물, 높은 밸류에이션 부담, 중국의 DUV 노광장비 개발 소식 등이 함께 꼽혔습니다.",
+     "sources": [
+      {
+       "name": "서울신문",
+       "url": "https://www.seoul.co.kr/news/economy/securities/2026/09/28/20260928500115"
+      }
+     ]
+    },
     {
      "date": "2026-09-27",
      "text": "3개월 전과 비교해 삼성전자 3분기 영업이익 전망치는 105조9,030억원에서 111조3,772억원으로 5%, SK하이닉스는 76조9,134억원에서 78조1,291억원으로 2% 높아졌습니다. 조사대상 232개 상장사 전체 영업이익 전망치 합계도 4% 늘었습니다.",
@@ -888,29 +1097,30 @@
     }
    ],
    "outlook": {
-    "text": "현재 지수가 7,000선보다 1%쯤 높을 뿐이어서 10월 말 7,000선 위에 있을 가능성은 절반을 조금 넘는 수준으로 봅니다. 삼성전자·SK하이닉스 3분기 영업이익 전망치가 3개월 전보다 각각 5%·2% 높아진 점을 반영해 상단 시나리오를 55%→60%로 조금 높였습니다. 반도체 실적 발표(10월 하순)와 연준 결정(10월 28일)이 같은 주에 몰려 있습니다. 이 수치는 판단에 근거한 추정이며 투자 조언이 아닙니다.",
+    "text": "9월 28일 코스피가 2.70% 내려 7,000선 밑으로 떨어지면서 10월 말 7,000 이상 시나리오의 비중을 60%→40%로 낮췄습니다. 6,889.74에서 7,000을 회복하려면 약 1.6% 반등이 필요한데, 미국채 금리·연준 결정(10월 28일)·3분기 실적 발표가 모두 10월 하순에 몰려 있어 변동성이 커진 상태입니다. 이 수치는 판단에 근거한 추정이며 투자 조언이 아닙니다.",
     "scenarios": [
      {
       "name": "10월 말 7,000 이상",
-      "probability": 60,
-      "text": "반도체 실적이 기대에 맞고 연준 충격이 제한적인 경우입니다."
+      "probability": 40,
+      "text": "국채금리가 진정되고 반도체 실적이 기대에 맞는 경우입니다."
      },
      {
       "name": "6,500~7,000",
-      "probability": 30,
-      "text": "금리와 유가 부담으로 조정받는 경우입니다."
+      "probability": 45,
+      "text": "금리·유가 부담이 이어지며 박스권에서 등락하는 경우입니다."
      },
      {
       "name": "6,500 미만",
-      "probability": 10,
-      "text": "AI 투자 둔화 우려와 대외 충격이 겹치는 경우입니다."
+      "probability": 15,
+      "text": "AI 밸류에이션 조정이 본격화하거나 대외 충격이 겹치는 경우입니다."
      }
     ],
     "signals": [
+     "미국 10년물 국채금리 방향",
      "10월 1일 발표되는 9월 수출(반도체)",
      "삼성전자·SK하이닉스 3분기 실적",
      "원·달러 환율",
-     "외국인 순매수 흐름"
+     "외국인·기관 순매수 전환 여부"
     ],
     "analogues": [
      {
@@ -941,9 +1151,9 @@
     {
      "date": "2026-09-28",
      "scenarios": {
-      "10월 말 7,000 이상": 60,
-      "6,500~7,000": 30,
-      "6,500 미만": 10
+      "10월 말 7,000 이상": 40,
+      "6,500~7,000": 45,
+      "6,500 미만": 15
      }
     }
    ]
@@ -956,6 +1166,16 @@
    "updated": "2026-09-28",
    "summary": "정부는 9월 1일 국무회의에서 올해보다 12.8% 늘어난 820조 9,000억원 규모의 2027년도 예산안을 의결해 9월 3일 국회에 제출했습니다(정기국회는 9월 1일부터 12월 9일까지 100일간 운영). 10월 6~27일 국정감사를 거쳐 11월부터 예산결산특별위원회 심사가 본격화됩니다. 민주당은 '담대한 투자'를 내세우고, 국민의힘은 '재정 폭주'라며 지출 구조조정을 요구하고 있어 부동산 세제·사법개혁 법안과 함께 여야 충돌이 예상됩니다.",
    "timeline": [
+    {
+     "date": "2026-09-28",
+     "text": "10월 6일부터 27일까지 3주간 진행되는 국정감사의 상임위별 세부 일정이 확정·공개됐습니다(정보위·성평등가족위·운영위 대통령비서실 감사는 10월 30일까지).",
+     "sources": [
+      {
+       "name": "YTN",
+       "url": "https://www.ytn.co.kr/_ln/0101_202608251819207042"
+      }
+     ]
+    },
     {
      "date": "2026-09-27",
      "text": "(정정) 정기국회는 9월 1일 이미 개회했고, 예산안은 9월 1일 국무회의 의결을 거쳐 9월 3일 국회에 제출됐습니다. 국정감사는 10월 6~27일 진행되고, 예산결산특별위원회 심사는 국정감사 후 11월부터 시작됩니다. (이전 기록의 '10월 1일 개회·10월 3일 제출'은 날짜 오류였습니다.)",
@@ -1249,6 +1469,52 @@
     }
    ],
    "kind": "주간"
+  },
+  {
+   "id": "F-20260928-04",
+   "made": "2026-09-28",
+   "issue": "hormuz",
+   "claim": "브렌트유가 10월 31일까지 배럴당 115달러를 넘는다",
+   "probability": 20,
+   "due": "2026-10-31",
+   "basis": "판단: 9월 28일 트럼프 대통령의 이란 제안 재거부 여파로 4% 급등해 108.59달러를 기록. 추가 상승에는 새로운 공급 충격이 필요",
+   "status": "대기",
+   "resolved": null,
+   "note": "",
+   "sources": [
+    {
+     "name": "뉴스핌",
+     "url": "https://www.newspim.com/news/view/20260928001100"
+    },
+    {
+     "name": "CNBC",
+     "url": "https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html"
+    }
+   ],
+   "kind": "일간"
+  },
+  {
+   "id": "F-20260928-05",
+   "made": "2026-09-28",
+   "issue": "fed",
+   "claim": "미국 10년물 국채금리가 10월 31일까지 5.5%를 넘는다",
+   "probability": 25,
+   "due": "2026-10-31",
+   "basis": "판단: 9월 28일 장중 5.2%대(2007년 이후 최고)까지 상승. FOMC(10월 28일) 전후 변동성이 큼",
+   "status": "대기",
+   "resolved": null,
+   "note": "",
+   "sources": [
+    {
+     "name": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2629968"
+    },
+    {
+     "name": "머니투데이",
+     "url": "https://www.mt.co.kr/stock/2026/09/28/2026092814221429351"
+    }
+   ],
+   "kind": "일간"
   }
  ],
  "indicators": [
@@ -1282,31 +1548,232 @@
   {
    "date": "2026-09-28",
    "values": {
-    "코스피": 7080.92,
-    "원/달러": 1355.23,
+    "코스피": 6889.74,
+    "원/달러": 1365.1,
     "S&P 500": 7743.41,
     "나스닥": 27068.72,
-    "브렌트유": 104.32,
-    "미 10년물 금리": 5.17,
+    "브렌트유": 108.59,
+    "미 10년물 금리": 5.2,
     "미 기준금리(상단)": 4.0
    },
-   "note": "코스피는 9/23(추석 전 마지막 거래일) 종가이며 9/28 오전 개장 전 기준입니다. 미국 지수·환율·유가·금리는 9/25(금) 마감 기준(주말 휴장으로 변동 없음).",
+   "note": "코스피·원/달러는 9/28 서울 거래 종가. 미국 지수는 9/25(금) 마감 기준(9/28 뉴욕 증시는 이 시각 개장 직후로 아직 종가 없음). 브렌트유는 11월물 9/28 오전 기준, 미 10년물 금리는 9/28 장중 기준(2007년 이후 최고 수준).",
    "sources": [
     {
-     "name": "WTOP",
-     "url": "https://wtop.com/national/2026/09/how-major-us-stock-indexes-fared-friday-9-25-2026"
+     "name": "이투데이",
+     "url": "https://www.etoday.co.kr/news/view/2629968"
     },
     {
-     "name": "블록미디어",
-     "url": "https://www.blockmedia.co.kr/archives/1144385"
+     "name": "철강금속신문",
+     "url": "https://www.snmnews.com/news/articleView.html?idxno=575208"
     },
     {
-     "name": "Fortune",
-     "url": "https://fortune.com/article/price-of-oil-09-25-2026/"
+     "name": "뉴스핌",
+     "url": "https://www.newspim.com/news/view/20260928001100"
     },
+    {
+     "name": "머니투데이",
+     "url": "https://www.mt.co.kr/stock/2026/09/28/2026092814221429351"
+    }
+   ]
+  }
+ ],
+ "events": [
+  {
+   "id": "EV-20260928-uschina",
+   "date": "2026-09-28",
+   "title": "미·중 무역합의 세부안 공개",
+   "short": "미중 합의 세부안",
+   "category": "외교·통상",
+   "region": "미국·중국",
+   "issue": "uschina",
+   "expected": "펜타닐 관세 20→10%로 인하, 대중 관세 전체 41→31% (USTR 사전 예고)",
+   "sources": [
+    {
+     "name": "Fox News",
+     "url": "https://www.foxnews.com/politics/us-china-strike-deal-lower-tariffs-30b-goods-trump-xi-washington-summit"
+    },
+    {
+     "name": "한국경제",
+     "url": "https://www.hankyung.com/article/202609266117i"
+    }
+   ]
+  },
+  {
+   "id": "EV-20260929-bsi",
+   "date": "2026-09-29",
+   "title": "한국은행 9월 기업경기조사·경제심리지수",
+   "short": "기업경기·경제심리",
+   "category": "경제지표",
+   "region": "한국",
+   "sources": [
+    {
+     "name": "SBS Biz",
+     "url": "https://biz.sbs.co.kr/article/20000336738"
+    }
+   ]
+  },
+  {
+   "id": "EV-20260930-ip",
+   "date": "2026-09-30",
+   "title": "8월 산업활동동향 (생산·소비·투자)",
+   "short": "8월 산업활동",
+   "category": "경제지표",
+   "region": "한국",
+   "sources": [
+    {
+     "name": "베타뉴스",
+     "url": "https://www.betanews.net/article/view/beta202609260016"
+    }
+   ]
+  },
+  {
+   "id": "EV-20261001-exports",
+   "date": "2026-10-01",
+   "title": "9월 수출입동향",
+   "short": "9월 수출입",
+   "category": "경제지표",
+   "region": "한국",
+   "issue": "kospi",
+   "expected": "반도체 호조 지속 (9월 1~20일 수출 +78.3%, 반도체 +259.4%)",
+   "sources": [
+    {
+     "name": "서울신문",
+     "url": "https://www.seoul.co.kr/news/economy/2026/09/21/20260921500200"
+    }
+   ]
+  },
+  {
+   "id": "EV-20261002-nfp",
+   "date": "2026-10-02",
+   "time": "21:30",
+   "title": "미국 9월 고용보고서 (비농업 고용·실업률)",
+   "short": "미 9월 고용",
+   "category": "경제지표",
+   "region": "미국",
+   "issue": "fed",
+   "note": "미국 동부 10/2 08:30 발표",
+   "sources": [
+    {
+     "name": "BLS",
+     "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+    }
+   ]
+  },
+  {
+   "id": "EV-20261006-audit",
+   "date": "2026-10-06",
+   "end": "2026-10-27",
+   "title": "국정감사",
+   "short": "국정감사",
+   "category": "정치·선거",
+   "region": "한국",
+   "issue": "budget2027",
+   "sources": [
+    {
+     "name": "뉴스톱",
+     "url": "https://www.newstopkorea.com/news/articleView.html?idxno=47402"
+    }
+   ]
+  },
+  {
+   "id": "EV-20261007-samsung",
+   "date": "2026-10-07",
+   "title": "삼성전자 3분기 잠정실적",
+   "short": "삼성전자 3Q 잠정",
+   "category": "기업실적",
+   "region": "한국",
+   "issue": "kospi",
+   "expected": "영업이익 약 107조~111조원 (증권가 추정, 매체별 차이)",
+   "note": "발표일은 7일 또는 8일로 보도됨. 확정되면 날짜를 고친다",
+   "sources": [
+    {
+     "name": "SR타임스",
+     "url": "http://www.srtimes.kr/news/articleView.html?idxno=213379"
+    },
+    {
+     "name": "파이낸셜뉴스",
+     "url": "https://www.fnnews.com/news/202609270715141983"
+    }
+   ]
+  },
+  {
+   "id": "EV-20261014-cpi",
+   "date": "2026-10-14",
+   "time": "21:30",
+   "title": "미국 9월 소비자물가(CPI)",
+   "short": "미 9월 CPI",
+   "category": "경제지표",
+   "region": "미국",
+   "issue": "fed",
+   "note": "미국 동부 10/14 08:30 발표",
+   "sources": [
+    {
+     "name": "US Inflation Calculator",
+     "url": "https://www.usinflationcalculator.com/inflation/consumer-price-index-release-schedule/"
+    }
+   ]
+  },
+  {
+   "id": "EV-20261022-bok",
+   "date": "2026-10-22",
+   "title": "한국은행 금통위 통화정책방향 결정",
+   "short": "한은 금리 결정",
+   "category": "통화정책",
+   "region": "한국",
+   "sources": [
+    {
+     "name": "뉴시스",
+     "url": "https://www.newsis.com/view/NISX20251030_0003383692"
+    }
+   ]
+  },
+  {
+   "id": "EV-20261029-fomc",
+   "date": "2026-10-29",
+   "time": "03:00",
+   "title": "미국 FOMC 금리 결정",
+   "short": "FOMC 금리 결정",
+   "category": "통화정책",
+   "region": "미국",
+   "issue": "fed",
+   "expected": "0.25%p 인상 확률 약 69~73% (CME FedWatch, 9/23 기준)",
+   "note": "미국 동부 10/28 14:00 발표",
+   "sources": [
     {
      "name": "CNBC",
-     "url": "https://www.cnbc.com/2026/09/25/treasury-yields-bonds-debt.html"
+     "url": "https://www.cnbc.com/2026/09/23/market-sees-next-fed-hike-in-october-following-barr-comments-hot-inflation.html"
+    }
+   ]
+  },
+  {
+   "id": "EV-20261103-midterm",
+   "date": "2026-11-03",
+   "title": "미국 중간선거",
+   "short": "미국 중간선거",
+   "category": "정치·선거",
+   "region": "미국",
+   "issue": "hormuz",
+   "note": "미국 현지 날짜. 개표 결과는 한국 시간 11/4부터",
+   "sources": [
+    {
+     "name": "Washington Times",
+     "url": "https://www.washingtontimes.com/news/2026/sep/27/iran-says-ready-doomsday-onslaught-us-attacks-trump-rejects-ceasefire/"
+    }
+   ]
+  },
+  {
+   "id": "EV-20261202-budget",
+   "date": "2026-12-02",
+   "title": "2027년도 예산안 법정 처리시한",
+   "short": "예산안 처리시한",
+   "category": "정치·선거",
+   "region": "한국",
+   "issue": "budget2027",
+   "expected": "기한 내 처리 약 20% (이 사이트 전망 F-20260927-07, 과거 20년 중 3번 준수)",
+   "sources": [
+    {
+     "name": "뉴스톱",
+     "url": "https://www.newstopkorea.com/news/articleView.html?idxno=47402"
     }
    ]
   }
@@ -1316,20 +1783,10 @@
  },
  "media": [
   {
-   "domain": "cnbc.com",
-   "name": "CNBC",
+   "domain": "bloomberg.com",
+   "name": "Bloomberg",
    "korean": false,
-   "count": 5,
-   "dates": [
-    "2026-09-28",
-    "2026-09-27"
-   ]
-  },
-  {
-   "domain": "fnnews.com",
-   "name": "파이낸셜뉴스",
-   "korean": true,
-   "count": 4,
+   "count": 3,
    "dates": [
     "2026-09-28",
     "2026-09-27"
@@ -1346,12 +1803,41 @@
    ]
   },
   {
-   "domain": "cnn.com",
-   "name": "CNN",
+   "domain": "seoul.co.kr",
+   "name": "서울신문",
+   "korean": true,
+   "count": 3,
+   "dates": [
+    "2026-09-28",
+    "2026-09-27"
+   ]
+  },
+  {
+   "domain": "aljazeera.com",
+   "name": "Al Jazeera",
    "korean": false,
    "count": 2,
    "dates": [
     "2026-09-28",
+    "2026-09-27"
+   ]
+  },
+  {
+   "domain": "axios.com",
+   "name": "Axios",
+   "korean": false,
+   "count": 2,
+   "dates": [
+    "2026-09-28",
+    "2026-09-27"
+   ]
+  },
+  {
+   "domain": "cnbc.com",
+   "name": "CNBC",
+   "korean": false,
+   "count": 2,
+   "dates": [
     "2026-09-27"
    ]
   },
@@ -1365,44 +1851,38 @@
    ]
   },
   {
-   "domain": "aljazeera.com",
-   "name": "Al Jazeera",
-   "korean": false,
-   "count": 1,
+   "domain": "etoday.co.kr",
+   "name": "이투데이",
+   "korean": true,
+   "count": 2,
    "dates": [
+    "2026-09-28",
+    "2026-09-27"
+   ]
+  },
+  {
+   "domain": "fnnews.com",
+   "name": "파이낸셜뉴스",
+   "korean": true,
+   "count": 2,
+   "dates": [
+    "2026-09-28",
+    "2026-09-27"
+   ]
+  },
+  {
+   "domain": "heraldcorp.com",
+   "name": "헤럴드경제",
+   "korean": true,
+   "count": 2,
+   "dates": [
+    "2026-09-28",
     "2026-09-27"
    ]
   },
   {
    "domain": "aa.com.tr",
    "name": "Anadolu",
-   "korean": false,
-   "count": 1,
-   "dates": [
-    "2026-09-27"
-   ]
-  },
-  {
-   "domain": "anews.com.tr",
-   "name": "Anadolu/AA",
-   "korean": false,
-   "count": 1,
-   "dates": [
-    "2026-09-28"
-   ]
-  },
-  {
-   "domain": "axios.com",
-   "name": "Axios",
-   "korean": false,
-   "count": 1,
-   "dates": [
-    "2026-09-27"
-   ]
-  },
-  {
-   "domain": "bloomberg.com",
-   "name": "Bloomberg",
    "korean": false,
    "count": 1,
    "dates": [
@@ -1428,8 +1908,35 @@
    ]
   },
   {
+   "domain": "cnn.com",
+   "name": "CNN",
+   "korean": false,
+   "count": 1,
+   "dates": [
+    "2026-09-27"
+   ]
+  },
+  {
+   "domain": "forbes.com",
+   "name": "Forbes",
+   "korean": false,
+   "count": 1,
+   "dates": [
+    "2026-09-28"
+   ]
+  },
+  {
    "domain": "foxnews.com",
    "name": "Fox News",
+   "korean": false,
+   "count": 1,
+   "dates": [
+    "2026-09-28"
+   ]
+  },
+  {
+   "domain": "france24.com",
+   "name": "France24",
    "korean": false,
    "count": 1,
    "dates": [
@@ -1446,36 +1953,18 @@
    ]
   },
   {
-   "domain": "nbcnews.com",
-   "name": "NBC News",
-   "korean": false,
+   "domain": "sbs.co.kr",
+   "name": "SBS Biz",
+   "korean": true,
    "count": 1,
    "dates": [
     "2026-09-28"
    ]
   },
   {
-   "domain": "usnews.com",
-   "name": "US News",
-   "korean": false,
-   "count": 1,
-   "dates": [
-    "2026-09-28"
-   ]
-  },
-  {
-   "domain": "wtop.com",
-   "name": "WTOP",
-   "korean": false,
-   "count": 1,
-   "dates": [
-    "2026-09-28"
-   ]
-  },
-  {
-   "domain": "washingtontimes.com",
-   "name": "Washington Times",
-   "korean": false,
+   "domain": "ytn.co.kr",
+   "name": "YTN",
+   "korean": true,
    "count": 1,
    "dates": [
     "2026-09-28"
@@ -1518,8 +2007,8 @@
    ]
   },
   {
-   "domain": "news1.kr",
-   "name": "뉴스1",
+   "domain": "nocutnews.co.kr",
+   "name": "노컷뉴스",
    "korean": true,
    "count": 1,
    "dates": [
@@ -1527,39 +2016,12 @@
    ]
   },
   {
-   "domain": "newstopkorea.com",
-   "name": "뉴스톱",
+   "domain": "newspim.com",
+   "name": "뉴스핌",
    "korean": true,
    "count": 1,
    "dates": [
     "2026-09-28"
-   ]
-  },
-  {
-   "domain": "betanews.net",
-   "name": "베타뉴스",
-   "korean": true,
-   "count": 1,
-   "dates": [
-    "2026-09-28"
-   ]
-  },
-  {
-   "domain": "blockmedia.co.kr",
-   "name": "블록미디어",
-   "korean": true,
-   "count": 1,
-   "dates": [
-    "2026-09-28"
-   ]
-  },
-  {
-   "domain": "seoul.co.kr",
-   "name": "서울신문",
-   "korean": true,
-   "count": 1,
-   "dates": [
-    "2026-09-27"
    ]
   },
   {
@@ -1572,26 +2034,8 @@
    ]
   },
   {
-   "domain": "ajunews.com",
-   "name": "아주경제",
-   "korean": true,
-   "count": 1,
-   "dates": [
-    "2026-09-28"
-   ]
-  },
-  {
    "domain": "edaily.co.kr",
    "name": "에이디일리",
-   "korean": true,
-   "count": 1,
-   "dates": [
-    "2026-09-27"
-   ]
-  },
-  {
-   "domain": "etoday.co.kr",
-   "name": "이투데이",
    "korean": true,
    "count": 1,
    "dates": [
@@ -1608,6 +2052,15 @@
    ]
   },
   {
+   "domain": "snmnews.com",
+   "name": "철강금속신문",
+   "korean": false,
+   "count": 1,
+   "dates": [
+    "2026-09-28"
+   ]
+  },
+  {
    "domain": "hankyung.com",
    "name": "한국경제",
    "korean": true,
@@ -1617,26 +2070,8 @@
    ]
   },
   {
-   "domain": "kenews.co.kr",
-   "name": "한국농촌경제신문",
-   "korean": true,
-   "count": 1,
-   "dates": [
-    "2026-09-28"
-   ]
-  },
-  {
    "domain": "huffingtonpost.kr",
    "name": "허프포스트코리아",
-   "korean": true,
-   "count": 1,
-   "dates": [
-    "2026-09-27"
-   ]
-  },
-  {
-   "domain": "heraldcorp.com",
-   "name": "헤럴드경제",
    "korean": true,
    "count": 1,
    "dates": [
