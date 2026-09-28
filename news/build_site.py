@@ -9,7 +9,7 @@
   briefings/YYYY-MM-DD.md          날짜별 브리핑
   summaries/week-YYYY-MM-DD.md     주간 요약 (파일 이름의 날짜는 그 주 월요일, 월~일)
   summaries/month-YYYY-MM.md       월간 요약
-  tracker.json                     issues, forecasts, indicators
+  tracker.json                     issues, forecasts, indicators, events(일정·결과)
 
 오늘 날짜는 한국 시간 기준이며, 시험할 때는 환경변수 BRIEF_TODAY=YYYY-MM-DD 로 바꿀 수 있다.
 
@@ -35,6 +35,8 @@ FORECAST_KINDS = {"일간", "주간", "월간"}
 KST = timezone(timedelta(hours=9))
 WEEK_FILE = re.compile(r"week-(\d{4}-\d{2}-\d{2})")
 MONTH_FILE = re.compile(r"month-(\d{4}-\d{2})")
+EVENT_CATS = {"통화정책", "경제지표", "정치·선거", "기업실적", "외교·통상", "기타"}
+EVENT_VERDICTS = {"부합", "상회", "하회", "예상 밖", "해당 없음"}
 
 
 def today() -> date:
@@ -149,6 +151,28 @@ def validate(tracker: dict) -> None:
         if f["status"] != "대기":
             check_date(f.get("resolved"), f"{where}.resolved")
             check_sources(f.get("result_sources"), f"{where}.result")
+    seen_ev = set()
+    for i, ev in enumerate(tracker.get("events", [])):
+        where = f"events[{i}]"
+        for key in ("id", "date", "title", "category", "region"):
+            if not ev.get(key):
+                fail(f"{where}.{key} 가 비어 있습니다")
+        if ev["id"] in seen_ev:
+            fail(f"{where}.id 중복: {ev['id']}")
+        seen_ev.add(ev["id"])
+        check_date(ev["date"], f"{where}.date")
+        if ev.get("end"):
+            check_date(ev["end"], f"{where}.end")
+        if ev["category"] not in EVENT_CATS:
+            fail(f"{where}.category 는 {sorted(EVENT_CATS)} 중 하나여야 합니다")
+        if ev.get("issue") and ev["issue"] not in issue_ids:
+            fail(f"{where}.issue 가 issues 에 없는 id 입니다 ({ev['issue']})")
+        check_sources(ev.get("sources"), where)
+        if ev.get("actual"):
+            if ev.get("verdict") not in EVENT_VERDICTS:
+                fail(f"{where}.verdict 는 {sorted(EVENT_VERDICTS)} 중 하나여야 합니다")
+            check_date(ev.get("recorded"), f"{where}.recorded")
+            check_sources(ev.get("result_sources"), f"{where}.result")
     for i, row in enumerate(tracker.get("indicators", [])):
         where = f"indicators[{i}]"
         check_date(row.get("date"), f"{where}.date")
@@ -253,6 +277,20 @@ def todo(work: Path) -> list:
         if key not in have and any(b.startswith(start.strftime("%Y-%m")) for b in briefs):
             tasks.append(f"월간 요약 작성: summaries/{key}.md ({start.isoformat()} ~ {last_day.isoformat()})")
         first = start
+    for ev in tracker.get("events", []):
+        last = ev.get("end") or ev["date"]
+        if not ev.get("actual") and last < now.isoformat():
+            tasks.append(f"일정 결과 기록: {ev['id']} ({ev['date']} {ev['title']}) — 예상: {ev.get('expected') or '없음'}")
+    soon = (now + timedelta(days=3)).isoformat()
+    for ev in tracker.get("events", []):
+        if (now.isoformat() <= ev["date"] <= soon and not ev.get("expected")
+                and ev["category"] in ("통화정책", "경제지표", "기업실적")):
+            tasks.append(f"예상치 채우기: {ev['id']} ({ev['date']} {ev['title']}) — 발표 전에 시장 예상·컨센서스와 출처를 적으세요")
+    horizon = (now + timedelta(days=28)).isoformat()
+    upcoming = [ev for ev in tracker.get("events", []) if now.isoformat() <= ev["date"] <= horizon]
+    if len(upcoming) < 8:
+        tasks.append(f"일정 채우기: 앞으로 4주({now.isoformat()} ~ {horizon}) 일정이 {len(upcoming)}건뿐입니다. "
+                     "공식 발표 일정을 확인해 8건 이상으로 채우세요")
     return tasks
 
 
@@ -285,6 +323,7 @@ def pack(work: Path, out: Path) -> None:
         "issues": issues,
         "forecasts": forecasts,
         "indicators": sorted(tracker.get("indicators", []), key=lambda r: r["date"]),
+        "events": sorted(tracker.get("events", []), key=lambda e: (e["date"], e.get("time") or "")),
         "score": score(forecasts),
         "media": media_summary(items),
     }
@@ -311,7 +350,7 @@ def unpack(src: Path, work: Path) -> None:
     for s in data.get("summaries", []):
         (work / "summaries" / f"{s['key']}.md").write_text(s["markdown"], encoding="utf-8")
     tracker = {"issues": data.get("issues", []), "forecasts": data.get("forecasts", []),
-               "indicators": data.get("indicators", [])}
+               "indicators": data.get("indicators", []), "events": data.get("events", [])}
     (work / "tracker.json").write_text(json.dumps(tracker, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"{work}: 브리핑 {len(data.get('briefings', []))}개, 요약 {len(data.get('summaries', []))}개, "
           f"이슈 {len(tracker['issues'])}개, 전망 {len(tracker['forecasts'])}개, 지표 기록 {len(tracker['indicators'])}일")
