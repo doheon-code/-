@@ -259,6 +259,14 @@ def todo(work: Path) -> list:
     briefs = {p.stem for p in (work / "briefings").glob("*.md") if DATE.fullmatch(p.stem)}
     have = {p.stem for p in (work / "summaries").glob("*.md")}
     tasks = []
+    # 실행이 실패해 비어 버린 날: 첫 브리핑 이후 최근 7일 안에서 브리핑이 없는 날을 찾는다
+    if briefs:
+        first = date.fromisoformat(min(briefs))
+        for back in range(7, 0, -1):
+            d = now - timedelta(days=back)
+            if d >= first and d.isoformat() not in briefs:
+                tasks.append(f"누락 브리핑 보충: briefings/{d.isoformat()}.md — 그날 실행이 실패해 비어 있습니다. "
+                             "그날 기준 뉴스로 짧게(핵심 3줄 + 영역별 주요 항목 + 출처) 작성하고 제목 끝에 '(보충 작성)'을 붙이세요")
     for f in tracker.get("forecasts", []):
         if f["status"] == "대기" and f["due"] < now.isoformat():
             tasks.append(f"전망 채점: {f['id']} (마감 {f['due']}, 당시 {f['probability']}%) — {f['claim']}")
